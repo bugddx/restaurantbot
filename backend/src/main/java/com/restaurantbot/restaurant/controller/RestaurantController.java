@@ -8,6 +8,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/restaurants")
@@ -20,12 +21,23 @@ public class RestaurantController {
     @ResponseStatus(HttpStatus.CREATED)
     public ApiResponse<RestaurantResponse> create(
             @Valid @RequestBody CreateRestaurantRequest request
-    ) {
+            ) {
 
         return ApiResponse.<RestaurantResponse>builder()
-                .success(true)
-                .message("Restaurant created successfully")
-                .data(service.create(request))
-                .build();
-    }
+            .success(true)
+            .message("Restaurant created successfully")
+            .data(service.create(request))
+            .build();
+            }
+
+    @GetMapping("/{id}")
+    public ApiResponse<RestaurantResponse> getById(
+            @PathVariable UUID id
+            ) {
+        return ApiResponse.<RestaurantResponse>builder()
+            .success(true)
+            .message("Restaurant found")
+            .data(service.findById(id))
+            .build();
+            }
 }

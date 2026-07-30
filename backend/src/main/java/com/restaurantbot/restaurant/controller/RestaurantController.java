@@ -4,11 +4,13 @@ import com.restaurantbot.common.response.ApiResponse;
 import com.restaurantbot.restaurant.dto.CreateRestaurantRequest;
 import com.restaurantbot.restaurant.dto.RestaurantResponse;
 import com.restaurantbot.restaurant.service.RestaurantService;
+import com.restaurantbot.restaurant.dto.UpdateRestaurantRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import java.util.UUID;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/restaurants")
@@ -40,4 +42,31 @@ public class RestaurantController {
             .data(service.findById(id))
             .build();
             }
+
+    @GetMapping
+    public ApiResponse<List<RestaurantResponse>> getAll() {
+        return ApiResponse.<List<RestaurantResponse>>builder()
+            .success(true)
+            .message("Restaurants retrieved successfully")
+            .data(service.findAll())
+            .build();
+    }
+
+    @PutMapping("/{id}")
+    public ApiResponse<RestaurantResponse> update(
+            @PathVariable UUID id,
+            @Valid @RequestBody UpdateRestaurantRequest request
+            ) {
+        return ApiResponse.<RestaurantResponse>builder()
+            .success(true)
+            .message("Restaurant updated successfully")
+            .data(service.update(id, request))
+            .build();
+            }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void delete(@PathVariable UUID id) {
+        service.delete(id);
+    }
 }

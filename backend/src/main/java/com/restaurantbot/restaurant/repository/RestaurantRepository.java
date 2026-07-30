@@ -7,9 +7,12 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface RestaurantRepository
-        extends JpaRepository<Restaurant, UUID> {
+    extends JpaRepository<Restaurant, UUID> {
 
     Optional<Restaurant> findByEmail(String email);
 
     boolean existsByEmail(String email);
+
+    boolean existsByEmailAndIdNot(String email, UUID id);
+
 }

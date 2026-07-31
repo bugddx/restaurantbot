@@ -19,6 +19,10 @@ spring:
 
   flyway:
     enabled: true
+    debug:  true
+    url: jdbc:postgresql://localhost:5432/restaurantbot
+    user: postgres
+    password: postgres
 
 server:
   port: 8080

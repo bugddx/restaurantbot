@@ -1,4 +1,4 @@
-package com.restaurantbot.common.exception;
+package com.restaurantbot.restaurant.exception;
 
 public class RestaurantAlreadyExistsException extends RuntimeException {
 

@@ -3,7 +3,7 @@ package com.restaurantbot.restaurant.service;
 import com.restaurantbot.restaurant.dto.CreateRestaurantRequest;
 import com.restaurantbot.restaurant.dto.RestaurantResponse;
 import com.restaurantbot.restaurant.entity.Restaurant;
-import com.restaurantbot.common.exception.RestaurantAlreadyExistsException;
+import com.restaurantbot.restaurant.exception.RestaurantAlreadyExistsException;
 import com.restaurantbot.restaurant.exception.RestaurantNotFoundException;
 import com.restaurantbot.restaurant.mapper.RestaurantMapper;
 import com.restaurantbot.restaurant.repository.RestaurantRepository;
@@ -39,7 +39,7 @@ public class RestaurantServiceImpl implements RestaurantService {
 
     @Override
     @Transactional(readOnly = true)
-    public RestaurantResponse findById(UUID id) {
+    public RestaurantResponse findById(Long id) {
 
         Restaurant restaurant = repository.findById(id)
                 .orElseThrow(() -> new RestaurantNotFoundException(id));
@@ -59,7 +59,7 @@ public class RestaurantServiceImpl implements RestaurantService {
 
      @Override
     public RestaurantResponse update(
-            UUID id,
+            Long id,
             UpdateRestaurantRequest request
     ) {
         Restaurant restaurant = findRestaurant(id);
@@ -79,12 +79,12 @@ public class RestaurantServiceImpl implements RestaurantService {
     }
 
     @Override
-    public void delete(UUID id) {
+    public void delete(Long id) {
         Restaurant restaurant = findRestaurant(id);
         repository.delete(restaurant);
     }
 
-    private Restaurant findRestaurant(UUID id) {
+    private Restaurant findRestaurant(Long id) {
         return repository.findById(id)
                 .orElseThrow(() -> new RestaurantNotFoundException(id));
     }

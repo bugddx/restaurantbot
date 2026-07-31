@@ -34,7 +34,7 @@ public class RestaurantController {
 
     @GetMapping("/{id}")
     public ApiResponse<RestaurantResponse> getById(
-            @PathVariable UUID id
+            @PathVariable Long id
             ) {
         return ApiResponse.<RestaurantResponse>builder()
             .success(true)
@@ -54,7 +54,7 @@ public class RestaurantController {
 
     @PutMapping("/{id}")
     public ApiResponse<RestaurantResponse> update(
-            @PathVariable UUID id,
+            @PathVariable Long id,
             @Valid @RequestBody UpdateRestaurantRequest request
             ) {
         return ApiResponse.<RestaurantResponse>builder()
@@ -66,7 +66,7 @@ public class RestaurantController {
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@PathVariable UUID id) {
+    public void delete(@PathVariable Long id) {
         service.delete(id);
     }
 }

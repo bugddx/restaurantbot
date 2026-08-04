@@ -5,8 +5,8 @@ import com.restaurantbot.restaurant.dto.CreateRestaurantRequest;
 import com.restaurantbot.restaurant.dto.RestaurantResponse;
 import com.restaurantbot.restaurant.dto.UpdateRestaurantRequest;
 import com.restaurantbot.common.exception.GlobalExceptionHandler;
-import com.restaurantbot.restaurant.exception.RestaurantAlreadyExistsException;
-import com.restaurantbot.restaurant.exception.RestaurantNotFoundException;
+import com.restaurantbot.common.exception.ResourceAlreadyExistsException;
+import com.restaurantbot.common.exception.ResourceNotFoundException;
 import com.restaurantbot.restaurant.service.RestaurantService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -81,7 +81,7 @@ private tools.jackson.databind.json.JsonMapper jsonMapper;
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.success").value(true))
                 .andExpect(jsonPath("$.message")
-                        .value("Restaurant created successfully"))
+                        .value("Restaurant created successfully."))
                 .andExpect(jsonPath("$.data.id").value(1))
                 .andExpect(jsonPath("$.data.name")
                         .value("Pizza Palace"))
@@ -105,8 +105,8 @@ private tools.jackson.databind.json.JsonMapper jsonMapper;
 
         given(restaurantService.create(any(CreateRestaurantRequest.class)))
                 .willThrow(
-                        new RestaurantAlreadyExistsException(
-                                request.email()
+                        new ResourceAlreadyExistsException(
+                                "Restaurant already exists with email: "+request.email()
                         )
                 );
 
@@ -163,7 +163,7 @@ private tools.jackson.databind.json.JsonMapper jsonMapper;
 
         given(restaurantService.findById(id))
                 .willThrow(
-                        new RestaurantNotFoundException(id)
+                        new ResourceNotFoundException("Restaurant not found with id: "+id)
                 );
 
         mockMvc.perform(
@@ -260,7 +260,7 @@ private tools.jackson.databind.json.JsonMapper jsonMapper;
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.success").value(true))
                 .andExpect(jsonPath("$.message")
-                        .value("Restaurant updated successfully"))
+                        .value("Restaurant updated successfully."))
                 .andExpect(jsonPath("$.data.name")
                         .value("New Pizza Palace"))
                 .andExpect(jsonPath("$.data.email")
@@ -287,7 +287,7 @@ private tools.jackson.databind.json.JsonMapper jsonMapper;
                         request
                 )
         ).willThrow(
-                new RestaurantNotFoundException(id)
+                new ResourceNotFoundException("Restaurant not found")
         );
 
         mockMvc.perform(
@@ -301,7 +301,7 @@ private tools.jackson.databind.json.JsonMapper jsonMapper;
     }
 
     @Test
-    void delete_shouldReturn204_whenRestaurantIsDeleted()
+    void delete_shouldReturn200_whenRestaurantIsDeleted()
             throws Exception {
 
         Long id = 1L;
@@ -313,7 +313,7 @@ private tools.jackson.databind.json.JsonMapper jsonMapper;
         mockMvc.perform(
                         delete("/api/v1/restaurants/{id}", id).with(csrf())
                 )
-                .andExpect(status().isNoContent());
+                .andExpect(status().isOk());
 
         verify(restaurantService).delete(id);
     }
@@ -325,7 +325,7 @@ private tools.jackson.databind.json.JsonMapper jsonMapper;
         Long id = 999L;
 
         doThrow(
-                new RestaurantNotFoundException(id)
+                new ResourceNotFoundException("Restaurant not found")
         )
                 .when(restaurantService)
                 .delete(id);

@@ -1,8 +1,6 @@
 package com.restaurantbot.common.exception;
 
-import com.restaurantbot.restaurant.exception.RestaurantNotFoundException;
-import com.restaurantbot.restaurant.exception.RestaurantAlreadyExistsException;
-import com.restaurantbot.common.response.ApiResponse;
+import com.restaurantbot.common.dto.ApiResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -14,9 +12,11 @@ import java.util.stream.Collectors;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(RestaurantAlreadyExistsException.class)
+    @ExceptionHandler(ResourceAlreadyExistsException.class)
     @ResponseStatus(HttpStatus.CONFLICT)
-    public ApiResponse<Void> handleRestaurantAlreadyExists(RestaurantAlreadyExistsException ex) {
+    public ApiResponse<Void> handleResourceAlreadyExists(
+            ResourceAlreadyExistsException ex) {
+
         return ApiResponse.<Void>builder()
                 .success(false)
                 .message(ex.getMessage())
@@ -24,9 +24,11 @@ public class GlobalExceptionHandler {
                 .build();
     }
 
-    @ExceptionHandler(RestaurantNotFoundException.class)
+    @ExceptionHandler(ResourceNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    public ApiResponse<Void> handleRestaurantNotFound(RestaurantNotFoundException ex) {
+    public ApiResponse<Void> handleResourceNotFound(
+            ResourceNotFoundException ex) {
+
         return ApiResponse.<Void>builder()
                 .success(false)
                 .message(ex.getMessage())
@@ -36,7 +38,9 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ApiResponse<Void> handleValidation(MethodArgumentNotValidException ex) {
+    public ApiResponse<Void> handleValidation(
+            MethodArgumentNotValidException ex) {
+
         String message = ex.getBindingResult()
                 .getFieldErrors()
                 .stream()
@@ -53,6 +57,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public ApiResponse<Void> handleException(Exception ex) {
+
         return ApiResponse.<Void>builder()
                 .success(false)
                 .message("Unexpected error occurred")

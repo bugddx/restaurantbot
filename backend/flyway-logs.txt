@@ -1,0 +1,1557 @@
+Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
+Maven home: /home/kali/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f
+Java version: 25.0.2, vendor: Debian, runtime: /usr/lib/jvm/java-25-openjdk-amd64
+Default locale: en, platform encoding: UTF-8
+OS name: "linux", version: "6.18.5+kali-amd64", arch: "amd64", family: "unix"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.graph < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.util < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.event.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Created adapter factory; available factories [file-lock, rwlock-local, semaphore-local, noop]; available name mappers [discriminating, file-gaecv, file-gav, file-hgaecv, file-hgav, file-static, gaecv, gav, static]
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: color
+[DEBUG] Message styles: debug info warning error success failure strong mojo project
+[DEBUG] Reading global settings from /home/kali/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/conf/settings.xml
+[DEBUG] Reading user settings from /home/kali/.m2/settings.xml
+[DEBUG] Reading global toolchains from /home/kali/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /home/kali/.m2/toolchains.xml
+[DEBUG] Using local repository at /home/kali/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /home/kali/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Creating adapter using nameMapper 'gaecv' and factory 'rwlock-local'
+[DEBUG] Extension realms for project com.restaurantbot:restaurantbot:jar:0.0.1-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.springframework.boot:spring-boot-starter-parent:pom:4.1.0: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.springframework.boot:spring-boot-dependencies:pom:4.1.0: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Resolving plugin prefix spring-boot from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix spring-boot to org.springframework.boot:spring-boot-maven-plugin from repository null
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.restaurantbot:restaurantbot:jar:0.0.1-SNAPSHOT
+[DEBUG] Tasks:   [spring-boot:run]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] ------------------< com.restaurantbot:restaurantbot >-------------------
+[INFO] Building restaurantbot 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[DEBUG] Resolving plugin prefix spring-boot from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix spring-boot to org.springframework.boot:spring-boot-maven-plugin from repository null
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.restaurantbot:restaurantbot:0.0.1-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [test]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] --- init fork of com.restaurantbot:restaurantbot:0.0.1-SNAPSHOT for org.springframework.boot:spring-boot-maven-plugin:4.1.0:run (default-cli) ---
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, test]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.5.0:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <propertiesEncoding>UTF-8</propertiesEncoding>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <annotationProcessorPaths>
+    <path>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.42</version>
+    </path>
+    <path>
+      <groupId>org.mapstruct</groupId>
+      <artifactId>mapstruct-processor</artifactId>
+      <version>1.6.3</version>
+    </path>
+    <path>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok-mapstruct-binding</artifactId>
+      <version>0.2.0</version>
+    </path>
+  </annotationProcessorPaths>
+  <annotationProcessorPathsUseDepMgmt default-value="false"/>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <fileExtensions default-value="class,jar"/>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <forceLegacyJavacApi default-value="false">${maven.compiler.forceLegacyJavacApi}</forceLegacyJavacApi>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <moduleVersion default-value="${project.version}">${maven.compiler.moduleVersion}</moduleVersion>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}">${maven.compiler.outputDirectory}</outputDirectory>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <parameters default-value="false">true</parameters>
+  <proc>${maven.compiler.proc}</proc>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <release>21</release>
+  <session default-value="${session}"/>
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <useModuleVersion default-value="true">${maven.compiler.useModuleVersion}</useModuleVersion>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.5.0:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <propertiesEncoding>UTF-8</propertiesEncoding>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.15.0:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <annotationProcessorPaths>
+    <path>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.42</version>
+    </path>
+    <path>
+      <groupId>org.mapstruct</groupId>
+      <artifactId>mapstruct-processor</artifactId>
+      <version>1.6.3</version>
+    </path>
+    <path>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok-mapstruct-binding</artifactId>
+      <version>0.2.0</version>
+    </path>
+  </annotationProcessorPaths>
+  <annotationProcessorPathsUseDepMgmt default-value="false"/>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac-test"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <fileExtensions default-value="class,jar"/>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <forceLegacyJavacApi default-value="false">${maven.compiler.forceLegacyJavacApi}</forceLegacyJavacApi>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <outputTimestamp default-value="${project.build.outputTimestamp}"/>
+  <parameters default-value="false">true</parameters>
+  <proc>${maven.compiler.proc}</proc>
+  <project default-value="${project}"/>
+  <release>21</release>
+  <session default-value="${session}"/>
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">${maven.compiler.target}</target>
+  <testPath default-value="${project.testClasspathElements}"/>
+  <testRelease>${maven.compiler.testRelease}</testRelease>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <useModulePath default-value="true"/>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] --- exit fork of com.restaurantbot:restaurantbot:0.0.1-SNAPSHOT for org.springframework.boot:spring-boot-maven-plugin:4.1.0:run (default-cli) ---
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.springframework.boot:spring-boot-maven-plugin:4.1.0:run (default-cli)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addResources default-value="false">${spring-boot.run.addResources}</addResources>
+  <additionalClasspathElements>${spring-boot.run.additional-classpath-elements}</additionalClasspathElements>
+  <agents>${spring-boot.run.agents}</agents>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <commandlineArguments>${spring-boot.run.arguments}</commandlineArguments>
+  <excludeGroupIds default-value="">${spring-boot.excludeGroupIds}</excludeGroupIds>
+  <excludes>${spring-boot.excludes}</excludes>
+  <includes>${spring-boot.includes}</includes>
+  <jvmArguments>${spring-boot.run.jvmArguments}</jvmArguments>
+  <mainClass>${start-class}</mainClass>
+  <noverify>${spring-boot.run.noverify}</noverify>
+  <optimizedLaunch default-value="true">${spring-boot.run.optimizedLaunch}</optimizedLaunch>
+  <profiles>${spring-boot.run.profiles}</profiles>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${spring-boot.run.skip}</skip>
+  <useTestClasspath default-value="false">${spring-boot.run.useTestClasspath}</useTestClasspath>
+  <workingDirectory>${spring-boot.run.workingDirectory}</workingDirectory>
+</configuration>
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] >>> spring-boot:4.1.0:run (default-cli) > test-compile @ restaurantbot >>>
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for vaadin-snapshots (http://oss.sonatype.org/content/repositories/vaadin-snapshots/).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for vaadin-releases (http://oss.sonatype.org/content/repositories/vaadin-releases/).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=3831444, ConflictMarker.markTime=1387125, ConflictMarker.nodeCount=384, ConflictIdSorter.graphTime=2379571, ConflictIdSorter.topsortTime=1205021, ConflictIdSorter.conflictIdCount=146, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=48511343, ConflictResolver.conflictItemCount=331, DfDependencyCollector.collectTime=1347836698, DfDependencyCollector.transformTime=62248644}
+[DEBUG] com.restaurantbot:restaurantbot:jar:0.0.1-SNAPSHOT
+[DEBUG]    org.springframework.boot:spring-boot-starter-web:jar:4.1.0:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter-jackson:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework.boot:spring-boot-jackson:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]       org.springframework.boot:spring-boot-starter-tomcat:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework.boot:spring-boot-starter-tomcat-runtime:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]             org.apache.tomcat.embed:tomcat-embed-core:jar:11.0.22:compile (version managed from 11.0.22)
+[DEBUG]             org.apache.tomcat.embed:tomcat-embed-websocket:jar:11.0.22:compile (version managed from 11.0.22)
+[DEBUG]          org.springframework.boot:spring-boot-tomcat:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]       org.springframework.boot:spring-boot-http-converter:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework:spring-web:jar:7.0.8:compile (version managed from 7.0.8)
+[DEBUG]       org.springframework.boot:spring-boot-webmvc:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework.boot:spring-boot-servlet:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework:spring-webmvc:jar:7.0.8:compile (version managed from 7.0.8)
+[DEBUG]             org.springframework:spring-expression:jar:7.0.8:compile (version managed from 7.0.8)
+[DEBUG]    org.springframework.boot:spring-boot-starter-data-jpa:jar:4.1.0:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework.boot:spring-boot-starter-logging:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]             ch.qos.logback:logback-classic:jar:1.5.34:compile (version managed from 1.5.34)
+[DEBUG]                ch.qos.logback:logback-core:jar:1.5.34:compile (version managed from 1.5.34)
+[DEBUG]             org.apache.logging.log4j:log4j-to-slf4j:jar:2.25.4:compile (version managed from 2.25.4)
+[DEBUG]                org.apache.logging.log4j:log4j-api:jar:2.25.4:compile (version managed from 2.25.4)
+[DEBUG]             org.slf4j:jul-to-slf4j:jar:2.0.18:compile (version managed from 2.0.18)
+[DEBUG]          jakarta.annotation:jakarta.annotation-api:jar:3.0.0:compile (version managed from 3.0.0)
+[DEBUG]          org.yaml:snakeyaml:jar:2.6:compile (version managed from 2.6)
+[DEBUG]       org.springframework.boot:spring-boot-starter-jdbc:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          com.zaxxer:HikariCP:jar:7.0.2:compile (version managed from 7.0.2)
+[DEBUG]       org.springframework.boot:spring-boot-data-jpa:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework.boot:spring-boot-data-commons:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]             org.springframework.boot:spring-boot-persistence:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]             org.springframework.data:spring-data-commons:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework.boot:spring-boot-hibernate:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]             org.springframework.boot:spring-boot-jpa:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]                jakarta.persistence:jakarta.persistence-api:jar:3.2.0:compile (version managed from 3.2.0)
+[DEBUG]             org.hibernate.orm:hibernate-core:jar:7.4.1.Final:compile (version managed from 7.4.1.Final)
+[DEBUG]                jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile (version managed from 2.0.1)
+[DEBUG]                org.hibernate.models:hibernate-models:jar:1.1.1:runtime
+[DEBUG]                org.glassfish.jaxb:jaxb-runtime:jar:4.0.9:runtime (version managed from 4.0.7)
+[DEBUG]                   org.glassfish.jaxb:jaxb-core:jar:4.0.9:runtime (version managed from 4.0.9)
+[DEBUG]                      org.eclipse.angus:angus-activation:jar:2.0.3:runtime
+[DEBUG]                      org.glassfish.jaxb:txw2:jar:4.0.9:runtime (version managed from 4.0.9)
+[DEBUG]                      com.sun.istack:istack-commons-runtime:jar:4.1.2:runtime
+[DEBUG]                jakarta.inject:jakarta.inject-api:jar:2.0.1:runtime (version managed from 2.0.1)
+[DEBUG]             org.springframework:spring-orm:jar:7.0.8:compile (version managed from 7.0.8)
+[DEBUG]          org.springframework.data:spring-data-jpa:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]             org.springframework:spring-tx:jar:7.0.8:compile (version managed from 7.0.8)
+[DEBUG]             org.antlr:antlr4-runtime:jar:4.13.2:compile
+[DEBUG]          org.springframework:spring-aspects:jar:7.0.8:compile (version managed from 7.0.8)
+[DEBUG]             org.aspectj:aspectjweaver:jar:1.9.25.1:compile (version managed from 1.9.25)
+[DEBUG]       org.springframework.boot:spring-boot-jdbc:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework.boot:spring-boot-sql:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework.boot:spring-boot-transaction:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework:spring-jdbc:jar:7.0.8:compile (version managed from 7.0.8)
+[DEBUG]    org.springframework.boot:spring-boot-starter-validation:jar:4.1.0:compile
+[DEBUG]       org.springframework.boot:spring-boot-validation:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-el:jar:11.0.22:compile (version managed from 11.0.22)
+[DEBUG]          org.hibernate.validator:hibernate-validator:jar:9.1.0.Final:compile (version managed from 9.1.0.Final)
+[DEBUG]             jakarta.validation:jakarta.validation-api:jar:3.1.1:compile (version managed from 3.1.1)
+[DEBUG]             org.jboss.logging:jboss-logging:jar:3.6.3.Final:compile (version managed from 3.6.1.Final)
+[DEBUG]             com.fasterxml:classmate:jar:1.7.3:compile (version managed from 1.7.1)
+[DEBUG]    org.springframework.boot:spring-boot-starter-security:jar:4.1.0:compile
+[DEBUG]       org.springframework.boot:spring-boot-security:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework.security:spring-security-config:jar:7.1.0:compile (version managed from 7.1.0)
+[DEBUG]             org.springframework.security:spring-security-core:jar:7.1.0:compile (version managed from 7.1.0)
+[DEBUG]                org.springframework.security:spring-security-crypto:jar:7.1.0:compile (version managed from 7.1.0)
+[DEBUG]          org.springframework.security:spring-security-web:jar:7.1.0:compile (version managed from 7.1.0)
+[DEBUG]       org.springframework:spring-aop:jar:7.0.8:compile (version managed from 7.0.8)
+[DEBUG]          org.springframework:spring-beans:jar:7.0.8:compile (version managed from 7.0.8)
+[DEBUG]    org.springframework.boot:spring-boot-starter-actuator:jar:4.1.0:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter-micrometer-metrics:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework.boot:spring-boot-micrometer-metrics:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]             org.springframework.boot:spring-boot-micrometer-observation:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]       org.springframework.boot:spring-boot-actuator-autoconfigure:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework.boot:spring-boot-actuator:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]       org.springframework.boot:spring-boot-health:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]       io.micrometer:micrometer-observation:jar:1.17.0:compile (version managed from 1.17.0)
+[DEBUG]          org.jspecify:jspecify:jar:1.0.0:compile (version managed from 1.0.0)
+[DEBUG]          io.micrometer:micrometer-commons:jar:1.17.0:compile (version managed from 1.17.0)
+[DEBUG]       io.micrometer:micrometer-jakarta9:jar:1.17.0:compile (version managed from 1.17.0)
+[DEBUG]          io.micrometer:micrometer-core:jar:1.17.0:compile (version managed from 1.17.0)
+[DEBUG]             org.hdrhistogram:HdrHistogram:jar:2.2.2:runtime
+[DEBUG]    org.postgresql:postgresql:jar:42.7.11:runtime
+[DEBUG]    org.flywaydb:flyway-database-postgresql:jar:12.4.0:compile
+[DEBUG]       org.flywaydb:flyway-core:jar:12.4.0:compile (version managed from 12.4.0)
+[DEBUG]          tools.jackson.core:jackson-databind:jar:3.1.4:compile (version managed from 3.1.1)
+[DEBUG]             com.fasterxml.jackson.core:jackson-annotations:jar:2.21:compile (version managed from 2.21)
+[DEBUG]             tools.jackson.core:jackson-core:jar:3.1.4:compile (version managed from 3.1.4)
+[DEBUG]    org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:2.8.9:compile
+[DEBUG]       org.springdoc:springdoc-openapi-starter-webmvc-api:jar:2.8.9:compile
+[DEBUG]          org.springdoc:springdoc-openapi-starter-common:jar:2.8.9:compile
+[DEBUG]             io.swagger.core.v3:swagger-core-jakarta:jar:2.2.30:compile
+[DEBUG]                org.apache.commons:commons-lang3:jar:3.20.0:compile (version managed from 3.17.0)
+[DEBUG]                io.swagger.core.v3:swagger-annotations-jakarta:jar:2.2.30:compile
+[DEBUG]                io.swagger.core.v3:swagger-models-jakarta:jar:2.2.30:compile
+[DEBUG]                com.fasterxml.jackson.core:jackson-databind:jar:2.21.4:compile (version managed from 2.18.2)
+[DEBUG]                   com.fasterxml.jackson.core:jackson-core:jar:2.21.4:compile (version managed from 2.21.4)
+[DEBUG]                com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.21.4:compile (version managed from 2.18.2)
+[DEBUG]                com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.21.4:compile (version managed from 2.18.2)
+[DEBUG]       org.webjars:swagger-ui:jar:5.21.0:compile
+[DEBUG]       org.webjars:webjars-locator-lite:jar:1.1.3:compile (version managed from 1.1.0)
+[DEBUG]    org.projectlombok:lombok:jar:1.18.42:provided
+[DEBUG]    org.mapstruct:mapstruct:jar:1.6.3:compile
+[DEBUG]    org.springframework.boot:spring-boot-devtools:jar:4.1.0:runtime (optional)
+[DEBUG]       org.springframework.boot:spring-boot:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]          org.springframework:spring-context:jar:7.0.8:compile (version managed from 7.0.8)
+[DEBUG]       org.springframework.boot:spring-boot-autoconfigure:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]    org.springframework.boot:spring-boot-starter-test:jar:4.1.0:test
+[DEBUG]       org.springframework.boot:spring-boot-test:jar:4.1.0:test (version managed from 4.1.0)
+[DEBUG]       org.springframework.boot:spring-boot-test-autoconfigure:jar:4.1.0:test (version managed from 4.1.0)
+[DEBUG]       com.jayway.jsonpath:json-path:jar:2.10.0:test (version managed from 2.10.0)
+[DEBUG]          org.slf4j:slf4j-api:jar:2.0.18:compile (version managed from 2.0.17)
+[DEBUG]       jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.5:compile (version managed from 4.0.5)
+[DEBUG]          jakarta.activation:jakarta.activation-api:jar:2.1.4:compile (version managed from 2.1.4)
+[DEBUG]       net.minidev:json-smart:jar:2.6.0:test (version managed from 2.6.0)
+[DEBUG]          net.minidev:accessors-smart:jar:2.6.0:test
+[DEBUG]             org.ow2.asm:asm:jar:9.7.1:test
+[DEBUG]       org.assertj:assertj-core:jar:3.27.7:test (version managed from 3.27.7)
+[DEBUG]          net.bytebuddy:byte-buddy:jar:1.18.10:runtime (version managed from 1.18.3)
+[DEBUG]       org.awaitility:awaitility:jar:4.3.0:test (version managed from 4.3.0)
+[DEBUG]       org.hamcrest:hamcrest:jar:3.0:test (version managed from 3.0)
+[DEBUG]       org.junit.jupiter:junit-jupiter:jar:6.0.3:test (version managed from 6.0.3)
+[DEBUG]          org.junit.jupiter:junit-jupiter-api:jar:6.0.3:test (version managed from 6.0.3)
+[DEBUG]             org.opentest4j:opentest4j:jar:1.3.0:test
+[DEBUG]             org.junit.platform:junit-platform-commons:jar:6.0.3:test (version managed from 6.0.3)
+[DEBUG]             org.apiguardian:apiguardian-api:jar:1.1.2:test
+[DEBUG]          org.junit.jupiter:junit-jupiter-params:jar:6.0.3:test (version managed from 6.0.3)
+[DEBUG]          org.junit.jupiter:junit-jupiter-engine:jar:6.0.3:test (version managed from 6.0.3)
+[DEBUG]             org.junit.platform:junit-platform-engine:jar:6.0.3:test (version managed from 6.0.3)
+[DEBUG]       org.mockito:mockito-core:jar:5.23.0:test (version managed from 5.23.0)
+[DEBUG]          net.bytebuddy:byte-buddy-agent:jar:1.18.10:test (version managed from 1.17.7)
+[DEBUG]          org.objenesis:objenesis:jar:3.3:test
+[DEBUG]       org.mockito:mockito-junit-jupiter:jar:5.23.0:test (version managed from 5.23.0)
+[DEBUG]       org.skyscreamer:jsonassert:jar:1.5.3:test (version managed from 1.5.3)
+[DEBUG]          com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[DEBUG]       org.springframework:spring-core:jar:7.0.8:compile (version managed from 7.0.8)
+[DEBUG]          commons-logging:commons-logging:jar:1.3.6:compile (version managed from 1.3.5)
+[DEBUG]       org.springframework:spring-test:jar:7.0.8:test (version managed from 7.0.8)
+[DEBUG]       org.xmlunit:xmlunit-core:jar:2.11.0:test (version managed from 2.11.0)
+[DEBUG]    org.springframework.boot:spring-boot-starter-security-test:jar:4.1.0:test
+[DEBUG]       org.springframework.boot:spring-boot-security-test:jar:4.1.0:test (version managed from 4.1.0)
+[DEBUG]          org.springframework.security:spring-security-test:jar:7.1.0:test (version managed from 7.1.0)
+[DEBUG]    org.springframework.boot:spring-boot-starter-webmvc-test:jar:4.1.0:test
+[DEBUG]       org.springframework.boot:spring-boot-starter-jackson-test:jar:4.1.0:test (version managed from 4.1.0)
+[DEBUG]       org.springframework.boot:spring-boot-starter-webmvc:jar:4.1.0:test (version managed from 4.1.0)
+[DEBUG]       org.springframework.boot:spring-boot-webmvc-test:jar:4.1.0:test (version managed from 4.1.0)
+[DEBUG]          org.springframework.boot:spring-boot-web-server:jar:4.1.0:compile (version managed from 4.1.0)
+[DEBUG]       org.springframework.boot:spring-boot-resttestclient:jar:4.1.0:test (version managed from 4.1.0)
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ restaurantbot ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=345301, ConflictMarker.markTime=150674, ConflictMarker.nodeCount=12, ConflictIdSorter.graphTime=136479, ConflictIdSorter.topsortTime=36131, ConflictIdSorter.conflictIdCount=9, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=589071, ConflictResolver.conflictItemCount=12, DfDependencyCollector.collectTime=89783685, DfDependencyCollector.transformTime=1295604}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:3.5.0
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:3.5.0:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.36:compile
+[DEBUG]       org.codehaus.plexus:plexus-build-api:jar:1.2.0:compile
+[DEBUG]          javax.inject:javax.inject:jar:1:compile
+[DEBUG]          org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG]          org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.9.0.M4:compile (version managed from default)
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.29:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.6.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.5.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.5.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.5.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:3.5.0
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:3.5.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-build-api:jar:1.2.0
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.29
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.6.0
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-resources-plugin:3.5.0:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.5.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-resources-plugin:3.5.0:resources:default-resources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (s) delimiters = [@]
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/kali/restaurantbot/backend/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.restaurantbot:restaurantbot:0.0.1-SNAPSHOT @ /home/kali/restaurantbot/backend/pom.xml
+[DEBUG]   (f) propertiesEncoding = UTF-8
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: true, FileSet {directory: /home/kali/restaurantbot/backend/src/main/resources, PatternSet [includes: {**/application*.yml, **/application*.yaml, **/application*.properties}, excludes: {}]}}, Resource {targetPath: null, filtering: false, FileSet {directory: /home/kali/restaurantbot/backend/src/main/resources, PatternSet [includes: {}, excludes: {**/application*.yml, **/application*.yaml, **/application*.properties}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6ab4a5b
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = false
+[DEBUG] -- end configuration --
+[DEBUG] properties used:
+[DEBUG] activemq.version: 6.2.6
+[DEBUG] angus-mail.version: 2.0.5
+[DEBUG] artemis.version: 2.53.0
+[DEBUG] aspectj.version: 1.9.25.1
+[DEBUG] assertj.version: 3.27.7
+[DEBUG] awaitility.version: 4.3.0
+[DEBUG] brave.version: 6.3.1
+[DEBUG] build-helper-maven-plugin.version: 3.6.1
+[DEBUG] byte-buddy.version: 1.18.10
+[DEBUG] cache2k.version: 2.6.1.Final
+[DEBUG] caffeine.version: 3.2.4
+[DEBUG] cassandra-driver.version: 4.19.3
+[DEBUG] classmate.version: 1.7.3
+[DEBUG] classworlds.conf: /home/kali/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/bin/m2.conf
+[DEBUG] commons-codec.version: 1.21.0
+[DEBUG] commons-dbcp2.version: 2.14.0
+[DEBUG] commons-lang3.version: 3.20.0
+[DEBUG] commons-logging.version: 1.3.6
+[DEBUG] commons-pool.version: 1.6
+[DEBUG] commons-pool2.version: 2.13.1
+[DEBUG] couchbase-client.version: 3.11.3
+[DEBUG] crac.version: 1.5.0
+[DEBUG] cyclonedx-maven-plugin.version: 2.9.1
+[DEBUG] db2-jdbc.version: 12.1.4.0
+[DEBUG] dependency-management-plugin.version: 1.1.7
+[DEBUG] derby.version: 10.16.1.1
+[DEBUG] ehcache3.version: 3.12.0
+[DEBUG] elasticsearch-client.version: 9.4.2
+[DEBUG] env.COMMAND_NOT_FOUND_INSTALL_PROMPT: 1
+[DEBUG] env.DBUS_SESSION_BUS_ADDRESS: unix:path=/run/user/1000/bus
+[DEBUG] env.DOTNET_CLI_TELEMETRY_OPTOUT: 1
+[DEBUG] env.HOME: /home/kali
+[DEBUG] env.LANG: C.UTF-8
+[DEBUG] env.LESS_TERMCAP_mb: 
+[DEBUG] env.LESS_TERMCAP_md: 
+[DEBUG] env.LESS_TERMCAP_me: 
+[DEBUG] env.LESS_TERMCAP_se: 
+[DEBUG] env.LESS_TERMCAP_so: 
+[DEBUG] env.LESS_TERMCAP_ue: 
+[DEBUG] env.LESS_TERMCAP_us: 
+[DEBUG] env.LOGNAME: kali
+[DEBUG] env.LS_COLORS: rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.7z=01;31:*.ace=01;31:*.alz=01;31:*.apk=01;31:*.arc=01;31:*.arj=01;31:*.bz=01;31:*.bz2=01;31:*.cab=01;31:*.cpio=01;31:*.crate=01;31:*.deb=01;31:*.drpm=01;31:*.dwm=01;31:*.dz=01;31:*.ear=01;31:*.egg=01;31:*.esd=01;31:*.gz=01;31:*.jar=01;31:*.lha=01;31:*.lrz=01;31:*.lz=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.lzo=01;31:*.pyz=01;31:*.rar=01;31:*.rpm=01;31:*.rz=01;31:*.sar=01;31:*.swm=01;31:*.t7z=01;31:*.tar=01;31:*.taz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tgz=01;31:*.tlz=01;31:*.txz=01;31:*.tz=01;31:*.tzo=01;31:*.tzst=01;31:*.udeb=01;31:*.war=01;31:*.whl=01;31:*.wim=01;31:*.xz=01;31:*.z=01;31:*.zip=01;31:*.zoo=01;31:*.zst=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.jxl=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90::ow=30;44:
+[DEBUG] env.MAVEN_CMD_LINE_ARGS:  spring-boot:run --debug
+[DEBUG] env.MAVEN_PROJECTBASEDIR: /home/kali/restaurantbot/backend
+[DEBUG] env.MOTD_SHOWN: pam
+[DEBUG] env.NMAP_PRIVILEGED: 
+[DEBUG] env.OLDPWD: /home/kali/restaurantbot/backend
+[DEBUG] env.PATH: /home/kali/.local/bin:/home/kali/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/kali/.dotnet/tools
+[DEBUG] env.POWERSHELL_TELEMETRY_OPTOUT: 1
+[DEBUG] env.POWERSHELL_UPDATECHECK: Off
+[DEBUG] env.PT8HOME: /opt/pt
+[DEBUG] env.PWD: /home/kali/restaurantbot/backend
+[DEBUG] env.QT_AUTO_SCREEN_SCALE_FACTOR: 0
+[DEBUG] env.QT_QPA_PLATFORMTHEME: qt5ct
+[DEBUG] env.SHELL: /usr/bin/zsh
+[DEBUG] env.SHLVL: 1
+[DEBUG] env.SSH_CLIENT: 192.168.29.61 14896 22
+[DEBUG] env.SSH_CONNECTION: 192.168.29.61 14896 192.168.29.36 22
+[DEBUG] env.SSH_TTY: /dev/pts/1
+[DEBUG] env.TERM: xterm-256color
+[DEBUG] env.USER: kali
+[DEBUG] env.XDG_DATA_DIRS: /usr/share/gnome:/usr/local/share/:/usr/share/
+[DEBUG] env.XDG_RUNTIME_DIR: /run/user/1000
+[DEBUG] env.XDG_SESSION_CLASS: user
+[DEBUG] env.XDG_SESSION_ID: 268
+[DEBUG] env.XDG_SESSION_TYPE: tty
+[DEBUG] env._: /home/kali/restaurantbot/backend/./mvnw
+[DEBUG] file.encoding: UTF-8
+[DEBUG] file.separator: /
+[DEBUG] flyway.version: 12.4.0
+[DEBUG] freemarker.version: 2.3.34
+[DEBUG] git-commit-id-maven-plugin.version: 9.2.0
+[DEBUG] glassfish-jaxb.version: 4.0.9
+[DEBUG] glassfish-jstl.version: 3.0.1
+[DEBUG] graphql-java.version: 25.0
+[DEBUG] groovy.version: 5.0.6
+[DEBUG] grpc-java.version: 1.80.0
+[DEBUG] grpc-kotlin.version: 1.5.0
+[DEBUG] gson.version: 2.13.2
+[DEBUG] h2.version: 2.4.240
+[DEBUG] hamcrest.version: 3.0
+[DEBUG] hazelcast.version: 5.5.0
+[DEBUG] hibernate-validator.version: 9.1.0.Final
+[DEBUG] hibernate.version: 7.4.1.Final
+[DEBUG] hikaricp.version: 7.0.2
+[DEBUG] hsqldb.version: 2.7.3
+[DEBUG] htmlunit.version: 4.21.0
+[DEBUG] httpasyncclient.version: 4.1.5
+[DEBUG] httpclient5.version: 5.6.1
+[DEBUG] httpcore.version: 4.4.16
+[DEBUG] httpcore5.version: 5.4.2
+[DEBUG] infinispan.version: 16.1.4
+[DEBUG] influxdb-java.version: 2.25
+[DEBUG] jackson-2-bom.version: 2.21.4
+[DEBUG] jackson-bom.version: 3.1.4
+[DEBUG] jakarta-activation.version: 2.1.4
+[DEBUG] jakarta-annotation.version: 3.0.0
+[DEBUG] jakarta-inject.version: 2.0.1
+[DEBUG] jakarta-jms.version: 3.1.0
+[DEBUG] jakarta-json-bind.version: 3.0.2
+[DEBUG] jakarta-json.version: 2.1.3
+[DEBUG] jakarta-mail.version: 2.1.5
+[DEBUG] jakarta-management.version: 1.1.4
+[DEBUG] jakarta-persistence.version: 3.2.0
+[DEBUG] jakarta-servlet-jsp-jstl.version: 3.0.2
+[DEBUG] jakarta-servlet.version: 6.1.0
+[DEBUG] jakarta-transaction.version: 2.0.1
+[DEBUG] jakarta-validation.version: 3.1.1
+[DEBUG] jakarta-websocket.version: 2.2.0
+[DEBUG] jakarta-ws-rs.version: 4.0.0
+[DEBUG] jakarta-xml-bind.version: 4.0.5
+[DEBUG] jakarta-xml-soap.version: 3.0.2
+[DEBUG] jakarta-xml-ws.version: 4.0.3
+[DEBUG] janino.version: 3.1.12
+[DEBUG] java.class.path: /home/kali/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/boot/plexus-classworlds-2.11.0.jar
+[DEBUG] java.class.version: 69.0
+[DEBUG] java.home: /usr/lib/jvm/java-25-openjdk-amd64
+[DEBUG] java.io.tmpdir: /tmp
+[DEBUG] java.library.path: /usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+[DEBUG] java.runtime.name: OpenJDK Runtime Environment
+[DEBUG] java.runtime.version: 25.0.2+10-Debian-1
+[DEBUG] java.specification.name: Java Platform API Specification
+[DEBUG] java.specification.vendor: Oracle Corporation
+[DEBUG] java.specification.version: 25
+[DEBUG] java.vendor: Debian
+[DEBUG] java.vendor.url: https://tracker.debian.org/openjdk-25
+[DEBUG] java.vendor.url.bug: https://bugs.debian.org/openjdk-25
+[DEBUG] java.version: 25.0.2
+[DEBUG] java.version.date: 2026-01-20
+[DEBUG] java.vm.compressedOopsMode: 32-bit
+[DEBUG] java.vm.info: mixed mode, sharing
+[DEBUG] java.vm.name: OpenJDK 64-Bit Server VM
+[DEBUG] java.vm.specification.name: Java Virtual Machine Specification
+[DEBUG] java.vm.specification.vendor: Oracle Corporation
+[DEBUG] java.vm.specification.version: 25
+[DEBUG] java.vm.vendor: Debian
+[DEBUG] java.vm.version: 25.0.2+10-Debian-1
+[DEBUG] javax-cache.version: 1.1.1
+[DEBUG] javax-money.version: 1.1
+[DEBUG] jaxen.version: 2.0.6
+[DEBUG] jaybird.version: 6.0.5
+[DEBUG] jboss-logging.version: 3.6.3.Final
+[DEBUG] jdk.debug: release
+[DEBUG] jdom2.version: 2.0.6.1
+[DEBUG] jedis.version: 7.4.1
+[DEBUG] jersey.version: 4.0.2
+[DEBUG] jetty-reactive-httpclient.version: 4.1.5
+[DEBUG] jetty.version: 12.1.10
+[DEBUG] jmustache.version: 1.16
+[DEBUG] jooq.version: 3.21.5
+[DEBUG] json-path.version: 2.10.0
+[DEBUG] json-smart.version: 2.6.0
+[DEBUG] jsonassert.version: 1.5.3
+[DEBUG] jspecify.version: 1.0.0
+[DEBUG] jtds.version: 1.3.1
+[DEBUG] junit-jupiter.version: 6.0.3
+[DEBUG] junit.version: 4.13.2
+[DEBUG] kafka.version: 4.2.1
+[DEBUG] kotlin-coroutines.version: 1.10.2
+[DEBUG] kotlin-serialization.version: 1.11.0
+[DEBUG] kotlin.version: 2.3.21
+[DEBUG] lettuce.version: 7.5.2.RELEASE
+[DEBUG] library.jansi.path: /home/kali/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/lib/jansi-native
+[DEBUG] line.separator: 
+
+[DEBUG] liquibase.version: 5.0.3
+[DEBUG] log4j2.version: 2.25.4
+[DEBUG] logback.version: 1.5.34
+[DEBUG] lombok.version: 1.18.42
+[DEBUG] mapstruct.version: 1.6.3
+[DEBUG] mariadb.version: 3.5.8
+[DEBUG] maven-antrun-plugin.version: 3.2.0
+[DEBUG] maven-assembly-plugin.version: 3.8.0
+[DEBUG] maven-clean-plugin.version: 3.5.0
+[DEBUG] maven-compiler-plugin.version: 3.15.0
+[DEBUG] maven-dependency-plugin.version: 3.10.0
+[DEBUG] maven-deploy-plugin.version: 3.1.4
+[DEBUG] maven-enforcer-plugin.version: 3.6.3
+[DEBUG] maven-failsafe-plugin.version: 3.5.6
+[DEBUG] maven-help-plugin.version: 3.5.1
+[DEBUG] maven-install-plugin.version: 3.1.4
+[DEBUG] maven-invoker-plugin.version: 3.9.1
+[DEBUG] maven-jar-plugin.version: 3.5.0
+[DEBUG] maven-javadoc-plugin.version: 3.12.0
+[DEBUG] maven-resources-plugin.version: 3.5.0
+[DEBUG] maven-shade-plugin.version: 3.6.2
+[DEBUG] maven-source-plugin.version: 3.4.0
+[DEBUG] maven-surefire-plugin.version: 3.5.6
+[DEBUG] maven-war-plugin.version: 3.5.1
+[DEBUG] maven.build.timestamp: 2026-08-01T05:03:31Z
+[DEBUG] maven.build.version: Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
+[DEBUG] maven.compiler.release: 21
+[DEBUG] maven.conf: /home/kali/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/conf
+[DEBUG] maven.home: /home/kali/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f
+[DEBUG] maven.multiModuleProjectDirectory: /home/kali/restaurantbot/backend
+[DEBUG] maven.version: 3.9.16
+[DEBUG] micrometer-tracing.version: 1.7.0
+[DEBUG] micrometer.version: 1.17.0
+[DEBUG] mockito.version: 5.23.0
+[DEBUG] mongodb.version: 5.8.0
+[DEBUG] mssql-jdbc.version: 13.4.0.jre11
+[DEBUG] mysql.version: 9.7.0
+[DEBUG] native-build-tools-plugin.version: 1.1.1
+[DEBUG] native.encoding: UTF-8
+[DEBUG] nekohtml.version: 1.9.22
+[DEBUG] neo4j-java-driver.version: 6.1.0
+[DEBUG] netty.version: 4.2.15.Final
+[DEBUG] opentelemetry.version: 1.62.0
+[DEBUG] oracle-database.version: 23.26.2.0.0
+[DEBUG] oracle-r2dbc.version: 1.3.0
+[DEBUG] os.arch: amd64
+[DEBUG] os.name: Linux
+[DEBUG] os.version: 6.18.5+kali-amd64
+[DEBUG] path.separator: :
+[DEBUG] pooled-jms.version: 3.2.2
+[DEBUG] postgresql.version: 42.7.11
+[DEBUG] project.baseUri: file:/home/kali/restaurantbot/backend/
+[DEBUG] project.build.sourceEncoding: UTF-8
+[DEBUG] project.reporting.outputEncoding: UTF-8
+[DEBUG] prometheus-client.version: 1.5.1
+[DEBUG] prometheus-simpleclient.version: 0.16.0
+[DEBUG] protobuf-common-protos.version: 2.70.0
+[DEBUG] protobuf-java.version: 4.34.2
+[DEBUG] protobuf-maven-plugin.version: 5.1.4
+[DEBUG] pulsar.version: 4.2.2
+[DEBUG] qpid-protonj2.version: 1.1.0
+[DEBUG] quartz.version: 2.5.2
+[DEBUG] querydsl.version: 5.1.0
+[DEBUG] r2dbc-h2.version: 1.1.0.RELEASE
+[DEBUG] r2dbc-mariadb.version: 1.4.0
+[DEBUG] r2dbc-mssql.version: 1.0.4.RELEASE
+[DEBUG] r2dbc-mysql.version: 1.4.2
+[DEBUG] r2dbc-pool.version: 1.0.2.RELEASE
+[DEBUG] r2dbc-postgresql.version: 1.1.1.RELEASE
+[DEBUG] r2dbc-proxy.version: 1.1.6.RELEASE
+[DEBUG] r2dbc-spi.version: 1.0.0.RELEASE
+[DEBUG] rabbit-amqp-client.version: 5.30.0
+[DEBUG] rabbit-stream-client.version: 1.6.0
+[DEBUG] reactive-streams.version: 1.0.4
+[DEBUG] reactor-bom.version: 2025.0.6
+[DEBUG] resource.delimiter: @
+[DEBUG] rsocket.version: 1.1.5
+[DEBUG] rxjava3.version: 3.1.12
+[DEBUG] saaj-impl.version: 3.0.6
+[DEBUG] selenium-htmlunit.version: 4.43.0
+[DEBUG] selenium.version: 4.43.0
+[DEBUG] sendgrid.version: 4.10.3
+[DEBUG] slf4j.version: 2.0.18
+[DEBUG] snakeyaml.version: 2.6
+[DEBUG] spring-amqp.version: 4.1.0
+[DEBUG] spring-batch.version: 6.0.4
+[DEBUG] spring-boot.run.main-class: ${start-class}
+[DEBUG] spring-data-bom.version: 2026.0.0
+[DEBUG] spring-framework.version: 7.0.8
+[DEBUG] spring-graphql.version: 2.0.4
+[DEBUG] spring-grpc.version: 1.1.0
+[DEBUG] spring-hateoas.version: 3.1.1
+[DEBUG] spring-integration.version: 7.1.0
+[DEBUG] spring-kafka.version: 4.1.0
+[DEBUG] spring-ldap.version: 4.1.0
+[DEBUG] spring-pulsar.version: 2.0.6
+[DEBUG] spring-restdocs.version: 4.0.1
+[DEBUG] spring-security.version: 7.1.0
+[DEBUG] spring-session.version: 4.1.0
+[DEBUG] spring-ws.version: 5.0.2
+[DEBUG] springdoc.version: 2.8.9
+[DEBUG] sqlite-jdbc.version: 3.53.2.0
+[DEBUG] stderr.encoding: UTF-8
+[DEBUG] stdin.encoding: UTF-8
+[DEBUG] stdout.encoding: UTF-8
+[DEBUG] sun.arch.data.model: 64
+[DEBUG] sun.boot.library.path: /usr/lib/jvm/java-25-openjdk-amd64/lib
+[DEBUG] sun.cpu.endian: little
+[DEBUG] sun.io.unicode.encoding: UnicodeLittle
+[DEBUG] sun.java.command: org.codehaus.plexus.classworlds.launcher.Launcher spring-boot:run --debug
+[DEBUG] sun.java.launcher: SUN_STANDARD
+[DEBUG] sun.jnu.encoding: UTF-8
+[DEBUG] sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+[DEBUG] testcontainers-redis-module.version: 2.2.4
+[DEBUG] testcontainers.version: 2.0.5
+[DEBUG] thymeleaf-extras-data-attribute.version: 2.0.1
+[DEBUG] thymeleaf-extras-springsecurity.version: 3.1.5.RELEASE
+[DEBUG] thymeleaf-layout-dialect.version: 4.0.1
+[DEBUG] thymeleaf.version: 3.1.5.RELEASE
+[DEBUG] tomcat.version: 11.0.22
+[DEBUG] unboundid-ldapsdk.version: 7.0.4
+[DEBUG] user.dir: /home/kali/restaurantbot/backend
+[DEBUG] user.home: /home/kali
+[DEBUG] user.language: en
+[DEBUG] user.name: kali
+[DEBUG] versions-maven-plugin.version: 2.21.0
+[DEBUG] vibur.version: 26.0
+[DEBUG] webjars-locator-core.version: 0.59
+[DEBUG] webjars-locator-lite.version: 1.1.3
+[DEBUG] wsdl4j.version: 1.6.3
+[DEBUG] xml-maven-plugin.version: 1.2.1
+[DEBUG] xmlunit2.version: 2.11.0
+[DEBUG] yasson.version: 3.0.4
+[DEBUG] zipkin-reporter.version: 3.5.3
+[DEBUG] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory /home/kali/restaurantbot/backend/src/main/resources
+excludes []
+includes [**/application*.yml, **/application*.yaml, **/application*.properties]
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[DEBUG] Copying file application.yml
+[DEBUG] file application.yml has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'application.yml'.
+[DEBUG] filtering /home/kali/restaurantbot/backend/src/main/resources/application.yml to /home/kali/restaurantbot/backend/target/classes/application.yml
+[DEBUG] resource with targetPath null
+directory /home/kali/restaurantbot/backend/src/main/resources
+excludes [**/application*.yml, **/application*.yaml, **/application*.properties]
+includes []
+[INFO] Copying 4 resources from src/main/resources to target/classes
+[DEBUG] Copying file db/migration/V2__use_numeric_restaurant_primary_key.sql
+[DEBUG] file V2__use_numeric_restaurant_primary_key.sql has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'V2__use_numeric_restaurant_primary_key.sql'.
+[DEBUG] copy /home/kali/restaurantbot/backend/src/main/resources/db/migration/V2__use_numeric_restaurant_primary_key.sql to /home/kali/restaurantbot/backend/target/classes/db/migration/V2__use_numeric_restaurant_primary_key.sql
+[DEBUG] Copying file db/migration/V1__create_restaurant.sql
+[DEBUG] file V1__create_restaurant.sql has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'V1__create_restaurant.sql'.
+[DEBUG] copy /home/kali/restaurantbot/backend/src/main/resources/db/migration/V1__create_restaurant.sql to /home/kali/restaurantbot/backend/target/classes/db/migration/V1__create_restaurant.sql
+[DEBUG] Copying file db/migration/V3__create_restaurant_tables.sql
+[DEBUG] file V3__create_restaurant_tables.sql has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'V3__create_restaurant_tables.sql'.
+[DEBUG] copy /home/kali/restaurantbot/backend/src/main/resources/db/migration/V3__create_restaurant_tables.sql to /home/kali/restaurantbot/backend/target/classes/db/migration/V3__create_restaurant_tables.sql
+[DEBUG] Copying file db/migration/V2.1__add_restaurant_code_column.sql
+[DEBUG] file V2.1__add_restaurant_code_column.sql has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'V2.1__add_restaurant_code_column.sql'.
+[DEBUG] copy /home/kali/restaurantbot/backend/src/main/resources/db/migration/V2.1__add_restaurant_code_column.sql to /home/kali/restaurantbot/backend/target/classes/db/migration/V2.1__add_restaurant_code_column.sql
+[DEBUG] no user filter components
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ restaurantbot ---
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=1613800, ConflictMarker.markTime=92680, ConflictMarker.nodeCount=23, ConflictIdSorter.graphTime=63805, ConflictIdSorter.topsortTime=51284, ConflictIdSorter.conflictIdCount=14, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1012100, ConflictResolver.conflictItemCount=23, DfDependencyCollector.collectTime=133381352, DfDependencyCollector.transformTime=2884563}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.15.0
+[DEBUG]    org.ow2.asm:asm:jar:9.9.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.4.2:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.36:compile
+[DEBUG]       commons-io:commons-io:jar:2.11.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-java:jar:1.5.2:compile
+[DEBUG]       com.thoughtworks.qdox:qdox:jar:2.2.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.16.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.16.2:compile
+[DEBUG]       javax.inject:javax.inject:jar:1:compile
+[DEBUG]       org.codehaus.plexus:plexus-xml:jar:3.0.1:compile (version managed from default)
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.16.2:runtime
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:4.0.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.15.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.15.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.15.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.15.0
+[DEBUG]   Included: org.ow2.asm:asm:jar:9.9.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.4.2
+[DEBUG]   Included: commons-io:commons-io:jar:2.11.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-java:jar:1.5.2
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.2.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.16.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.16.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-xml:jar:3.0.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.16.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:4.0.2
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.15.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile:default-compile' with basic configurator -->
+[DEBUG]   (s) groupId = org.projectlombok
+[DEBUG]   (s) artifactId = lombok
+[DEBUG]   (s) version = 1.18.42
+[DEBUG]   (s) groupId = org.mapstruct
+[DEBUG]   (s) artifactId = mapstruct-processor
+[DEBUG]   (s) version = 1.6.3
+[DEBUG]   (s) groupId = org.projectlombok
+[DEBUG]   (s) artifactId = lombok-mapstruct-binding
+[DEBUG]   (s) version = 0.2.0
+[DEBUG]   (f) annotationProcessorPaths = [org.projectlombok:lombok:1.18.42.jar, org.mapstruct:mapstruct-processor:1.6.3.jar, org.projectlombok:lombok-mapstruct-binding:0.2.0.jar]
+[DEBUG]   (f) annotationProcessorPathsUseDepMgmt = false
+[DEBUG]   (f) basedir = /home/kali/restaurantbot/backend
+[DEBUG]   (f) buildDirectory = /home/kali/restaurantbot/backend/target
+[DEBUG]   (f) compilePath = [/home/kali/restaurantbot/backend/target/classes, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-web/4.1.0/spring-boot-starter-web-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-jackson/4.1.0/spring-boot-starter-jackson-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-jackson/4.1.0/spring-boot-jackson-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/4.1.0/spring-boot-starter-tomcat-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat-runtime/4.1.0/spring-boot-starter-tomcat-runtime-4.1.0.jar, /home/kali/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.22/tomcat-embed-core-11.0.22.jar, /home/kali/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.22/tomcat-embed-websocket-11.0.22.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.1.0/spring-boot-tomcat-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.1.0/spring-boot-http-converter-4.1.0.jar, /home/kali/.m2/repository/org/springframework/spring-web/7.0.8/spring-web-7.0.8.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.1.0/spring-boot-webmvc-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-servlet/4.1.0/spring-boot-servlet-4.1.0.jar, /home/kali/.m2/repository/org/springframework/spring-webmvc/7.0.8/spring-webmvc-7.0.8.jar, /home/kali/.m2/repository/org/springframework/spring-expression/7.0.8/spring-expression-7.0.8.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/4.1.0/spring-boot-starter-data-jpa-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter/4.1.0/spring-boot-starter-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.1.0/spring-boot-starter-logging-4.1.0.jar, /home/kali/.m2/repository/ch/qos/logback/logback-classic/1.5.34/logback-classic-1.5.34.jar, /home/kali/.m2/repository/ch/qos/logback/logback-core/1.5.34/logback-core-1.5.34.jar, /home/kali/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.4/log4j-to-slf4j-2.25.4.jar, /home/kali/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.4/log4j-api-2.25.4.jar, /home/kali/.m2/repository/org/slf4j/jul-to-slf4j/2.0.18/jul-to-slf4j-2.0.18.jar, /home/kali/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar, /home/kali/.m2/repository/org/yaml/snakeyaml/2.6/snakeyaml-2.6.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/4.1.0/spring-boot-starter-jdbc-4.1.0.jar, /home/kali/.m2/repository/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-data-jpa/4.1.0/spring-boot-data-jpa-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-data-commons/4.1.0/spring-boot-data-commons-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-persistence/4.1.0/spring-boot-persistence-4.1.0.jar, /home/kali/.m2/repository/org/springframework/data/spring-data-commons/4.1.0/spring-data-commons-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-hibernate/4.1.0/spring-boot-hibernate-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-jpa/4.1.0/spring-boot-jpa-4.1.0.jar, /home/kali/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.2.0/jakarta.persistence-api-3.2.0.jar, /home/kali/.m2/repository/org/hibernate/orm/hibernate-core/7.4.1.Final/hibernate-core-7.4.1.Final.jar, /home/kali/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar, /home/kali/.m2/repository/org/springframework/spring-orm/7.0.8/spring-orm-7.0.8.jar, /home/kali/.m2/repository/org/springframework/data/spring-data-jpa/4.1.0/spring-data-jpa-4.1.0.jar, /home/kali/.m2/repository/org/springframework/spring-tx/7.0.8/spring-tx-7.0.8.jar, /home/kali/.m2/repository/org/antlr/antlr4-runtime/4.13.2/antlr4-runtime-4.13.2.jar, /home/kali/.m2/repository/org/springframework/spring-aspects/7.0.8/spring-aspects-7.0.8.jar, /home/kali/.m2/repository/org/aspectj/aspectjweaver/1.9.25.1/aspectjweaver-1.9.25.1.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-jdbc/4.1.0/spring-boot-jdbc-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-sql/4.1.0/spring-boot-sql-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-transaction/4.1.0/spring-boot-transaction-4.1.0.jar, /home/kali/.m2/repository/org/springframework/spring-jdbc/7.0.8/spring-jdbc-7.0.8.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-validation/4.1.0/spring-boot-starter-validation-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-validation/4.1.0/spring-boot-validation-4.1.0.jar, /home/kali/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.22/tomcat-embed-el-11.0.22.jar, /home/kali/.m2/repository/org/hibernate/validator/hibernate-validator/9.1.0.Final/hibernate-validator-9.1.0.Final.jar, /home/kali/.m2/repository/jakarta/validation/jakarta.validation-api/3.1.1/jakarta.validation-api-3.1.1.jar, /home/kali/.m2/repository/org/jboss/logging/jboss-logging/3.6.3.Final/jboss-logging-3.6.3.Final.jar, /home/kali/.m2/repository/com/fasterxml/classmate/1.7.3/classmate-1.7.3.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-security/4.1.0/spring-boot-starter-security-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-security/4.1.0/spring-boot-security-4.1.0.jar, /home/kali/.m2/repository/org/springframework/security/spring-security-config/7.1.0/spring-security-config-7.1.0.jar, /home/kali/.m2/repository/org/springframework/security/spring-security-core/7.1.0/spring-security-core-7.1.0.jar, /home/kali/.m2/repository/org/springframework/security/spring-security-crypto/7.1.0/spring-security-crypto-7.1.0.jar, /home/kali/.m2/repository/org/springframework/security/spring-security-web/7.1.0/spring-security-web-7.1.0.jar, /home/kali/.m2/repository/org/springframework/spring-aop/7.0.8/spring-aop-7.0.8.jar, /home/kali/.m2/repository/org/springframework/spring-beans/7.0.8/spring-beans-7.0.8.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/4.1.0/spring-boot-starter-actuator-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-micrometer-metrics/4.1.0/spring-boot-starter-micrometer-metrics-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-micrometer-metrics/4.1.0/spring-boot-micrometer-metrics-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-micrometer-observation/4.1.0/spring-boot-micrometer-observation-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/4.1.0/spring-boot-actuator-autoconfigure-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-actuator/4.1.0/spring-boot-actuator-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-health/4.1.0/spring-boot-health-4.1.0.jar, /home/kali/.m2/repository/io/micrometer/micrometer-observation/1.17.0/micrometer-observation-1.17.0.jar, /home/kali/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar, /home/kali/.m2/repository/io/micrometer/micrometer-commons/1.17.0/micrometer-commons-1.17.0.jar, /home/kali/.m2/repository/io/micrometer/micrometer-jakarta9/1.17.0/micrometer-jakarta9-1.17.0.jar, /home/kali/.m2/repository/io/micrometer/micrometer-core/1.17.0/micrometer-core-1.17.0.jar, /home/kali/.m2/repository/org/flywaydb/flyway-database-postgresql/12.4.0/flyway-database-postgresql-12.4.0.jar, /home/kali/.m2/repository/org/flywaydb/flyway-core/12.4.0/flyway-core-12.4.0.jar, /home/kali/.m2/repository/tools/jackson/core/jackson-databind/3.1.4/jackson-databind-3.1.4.jar, /home/kali/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar, /home/kali/.m2/repository/tools/jackson/core/jackson-core/3.1.4/jackson-core-3.1.4.jar, /home/kali/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-ui/2.8.9/springdoc-openapi-starter-webmvc-ui-2.8.9.jar, /home/kali/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-api/2.8.9/springdoc-openapi-starter-webmvc-api-2.8.9.jar, /home/kali/.m2/repository/org/springdoc/springdoc-openapi-starter-common/2.8.9/springdoc-openapi-starter-common-2.8.9.jar, /home/kali/.m2/repository/io/swagger/core/v3/swagger-core-jakarta/2.2.30/swagger-core-jakarta-2.2.30.jar, /home/kali/.m2/repository/org/apache/commons/commons-lang3/3.20.0/commons-lang3-3.20.0.jar, /home/kali/.m2/repository/io/swagger/core/v3/swagger-annotations-jakarta/2.2.30/swagger-annotations-jakarta-2.2.30.jar, /home/kali/.m2/repository/io/swagger/core/v3/swagger-models-jakarta/2.2.30/swagger-models-jakarta-2.2.30.jar, /home/kali/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.21.4/jackson-databind-2.21.4.jar, /home/kali/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.21.4/jackson-core-2.21.4.jar, /home/kali/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.21.4/jackson-dataformat-yaml-2.21.4.jar, /home/kali/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.21.4/jackson-datatype-jsr310-2.21.4.jar, /home/kali/.m2/repository/org/webjars/swagger-ui/5.21.0/swagger-ui-5.21.0.jar, /home/kali/.m2/repository/org/webjars/webjars-locator-lite/1.1.3/webjars-locator-lite-1.1.3.jar, /home/kali/.m2/repository/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar, /home/kali/.m2/repository/org/mapstruct/mapstruct/1.6.3/mapstruct-1.6.3.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot/4.1.0/spring-boot-4.1.0.jar, /home/kali/.m2/repository/org/springframework/spring-context/7.0.8/spring-context-7.0.8.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.1.0/spring-boot-autoconfigure-4.1.0.jar, /home/kali/.m2/repository/org/slf4j/slf4j-api/2.0.18/slf4j-api-2.0.18.jar, /home/kali/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.5/jakarta.xml.bind-api-4.0.5.jar, /home/kali/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar, /home/kali/.m2/repository/org/springframework/spring-core/7.0.8/spring-core-7.0.8.jar, /home/kali/.m2/repository/commons-logging/commons-logging/1.3.6/commons-logging-1.3.6.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.0/spring-boot-web-server-4.1.0.jar]
+[DEBUG]   (f) compileSourceRoots = [/home/kali/restaurantbot/backend/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) createMissingPackageInfoClass = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) debugFileName = javac
+[DEBUG]   (f) enablePreview = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) fileExtensions = [jar, class]
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) forceLegacyJavacApi = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /home/kali/restaurantbot/backend/target/generated-sources/annotations
+[DEBUG]   (f) moduleVersion = 0.0.1-SNAPSHOT
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /home/kali/restaurantbot/backend/target/classes
+[DEBUG]   (f) parameters = true
+[DEBUG]   (f) project = MavenProject: com.restaurantbot:restaurantbot:0.0.1-SNAPSHOT @ /home/kali/restaurantbot/backend/pom.xml
+[DEBUG]   (f) projectArtifact = com.restaurantbot:restaurantbot:jar:0.0.1-SNAPSHOT
+[DEBUG]   (s) release = 21
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6ab4a5b
+[DEBUG]   (f) showCompilationChanges = false
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = true
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) useModuleVersion = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=59487, ConflictMarker.markTime=47365, ConflictMarker.nodeCount=4, ConflictIdSorter.graphTime=8947, ConflictIdSorter.topsortTime=25841, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=250067, ConflictResolver.conflictItemCount=3, DfDependencyCollector.collectTime=19109319, DfDependencyCollector.transformTime=433488}
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] Nothing to compile - all classes are up to date.
+[DEBUG] Adding /home/kali/restaurantbot/backend/target/generated-sources/annotations to the project compile source roots but NOT the actual compile source roots:
+  /home/kali/restaurantbot/backend/src/main/java
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ restaurantbot ---
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-resources-plugin:3.5.0:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.5.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-resources-plugin:3.5.0:testResources:default-testResources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (s) delimiters = [@]
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/kali/restaurantbot/backend/target/test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.restaurantbot:restaurantbot:0.0.1-SNAPSHOT @ /home/kali/restaurantbot/backend/pom.xml
+[DEBUG]   (f) propertiesEncoding = UTF-8
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /home/kali/restaurantbot/backend/src/test/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6ab4a5b
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = false
+[DEBUG] -- end configuration --
+[DEBUG] properties used:
+[DEBUG] activemq.version: 6.2.6
+[DEBUG] angus-mail.version: 2.0.5
+[DEBUG] artemis.version: 2.53.0
+[DEBUG] aspectj.version: 1.9.25.1
+[DEBUG] assertj.version: 3.27.7
+[DEBUG] awaitility.version: 4.3.0
+[DEBUG] brave.version: 6.3.1
+[DEBUG] build-helper-maven-plugin.version: 3.6.1
+[DEBUG] byte-buddy.version: 1.18.10
+[DEBUG] cache2k.version: 2.6.1.Final
+[DEBUG] caffeine.version: 3.2.4
+[DEBUG] cassandra-driver.version: 4.19.3
+[DEBUG] classmate.version: 1.7.3
+[DEBUG] classworlds.conf: /home/kali/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/bin/m2.conf
+[DEBUG] commons-codec.version: 1.21.0
+[DEBUG] commons-dbcp2.version: 2.14.0
+[DEBUG] commons-lang3.version: 3.20.0
+[DEBUG] commons-logging.version: 1.3.6
+[DEBUG] commons-pool.version: 1.6
+[DEBUG] commons-pool2.version: 2.13.1
+[DEBUG] couchbase-client.version: 3.11.3
+[DEBUG] crac.version: 1.5.0
+[DEBUG] cyclonedx-maven-plugin.version: 2.9.1
+[DEBUG] db2-jdbc.version: 12.1.4.0
+[DEBUG] dependency-management-plugin.version: 1.1.7
+[DEBUG] derby.version: 10.16.1.1
+[DEBUG] ehcache3.version: 3.12.0
+[DEBUG] elasticsearch-client.version: 9.4.2
+[DEBUG] env.COMMAND_NOT_FOUND_INSTALL_PROMPT: 1
+[DEBUG] env.DBUS_SESSION_BUS_ADDRESS: unix:path=/run/user/1000/bus
+[DEBUG] env.DOTNET_CLI_TELEMETRY_OPTOUT: 1
+[DEBUG] env.HOME: /home/kali
+[DEBUG] env.LANG: C.UTF-8
+[DEBUG] env.LESS_TERMCAP_mb: 
+[DEBUG] env.LESS_TERMCAP_md: 
+[DEBUG] env.LESS_TERMCAP_me: 
+[DEBUG] env.LESS_TERMCAP_se: 
+[DEBUG] env.LESS_TERMCAP_so: 
+[DEBUG] env.LESS_TERMCAP_ue: 
+[DEBUG] env.LESS_TERMCAP_us: 
+[DEBUG] env.LOGNAME: kali
+[DEBUG] env.LS_COLORS: rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.7z=01;31:*.ace=01;31:*.alz=01;31:*.apk=01;31:*.arc=01;31:*.arj=01;31:*.bz=01;31:*.bz2=01;31:*.cab=01;31:*.cpio=01;31:*.crate=01;31:*.deb=01;31:*.drpm=01;31:*.dwm=01;31:*.dz=01;31:*.ear=01;31:*.egg=01;31:*.esd=01;31:*.gz=01;31:*.jar=01;31:*.lha=01;31:*.lrz=01;31:*.lz=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.lzo=01;31:*.pyz=01;31:*.rar=01;31:*.rpm=01;31:*.rz=01;31:*.sar=01;31:*.swm=01;31:*.t7z=01;31:*.tar=01;31:*.taz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tgz=01;31:*.tlz=01;31:*.txz=01;31:*.tz=01;31:*.tzo=01;31:*.tzst=01;31:*.udeb=01;31:*.war=01;31:*.whl=01;31:*.wim=01;31:*.xz=01;31:*.z=01;31:*.zip=01;31:*.zoo=01;31:*.zst=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.jxl=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90::ow=30;44:
+[DEBUG] env.MAVEN_CMD_LINE_ARGS:  spring-boot:run --debug
+[DEBUG] env.MAVEN_PROJECTBASEDIR: /home/kali/restaurantbot/backend
+[DEBUG] env.MOTD_SHOWN: pam
+[DEBUG] env.NMAP_PRIVILEGED: 
+[DEBUG] env.OLDPWD: /home/kali/restaurantbot/backend
+[DEBUG] env.PATH: /home/kali/.local/bin:/home/kali/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/kali/.dotnet/tools
+[DEBUG] env.POWERSHELL_TELEMETRY_OPTOUT: 1
+[DEBUG] env.POWERSHELL_UPDATECHECK: Off
+[DEBUG] env.PT8HOME: /opt/pt
+[DEBUG] env.PWD: /home/kali/restaurantbot/backend
+[DEBUG] env.QT_AUTO_SCREEN_SCALE_FACTOR: 0
+[DEBUG] env.QT_QPA_PLATFORMTHEME: qt5ct
+[DEBUG] env.SHELL: /usr/bin/zsh
+[DEBUG] env.SHLVL: 1
+[DEBUG] env.SSH_CLIENT: 192.168.29.61 14896 22
+[DEBUG] env.SSH_CONNECTION: 192.168.29.61 14896 192.168.29.36 22
+[DEBUG] env.SSH_TTY: /dev/pts/1
+[DEBUG] env.TERM: xterm-256color
+[DEBUG] env.USER: kali
+[DEBUG] env.XDG_DATA_DIRS: /usr/share/gnome:/usr/local/share/:/usr/share/
+[DEBUG] env.XDG_RUNTIME_DIR: /run/user/1000
+[DEBUG] env.XDG_SESSION_CLASS: user
+[DEBUG] env.XDG_SESSION_ID: 268
+[DEBUG] env.XDG_SESSION_TYPE: tty
+[DEBUG] env._: /home/kali/restaurantbot/backend/./mvnw
+[DEBUG] file.encoding: UTF-8
+[DEBUG] file.separator: /
+[DEBUG] flyway.version: 12.4.0
+[DEBUG] freemarker.version: 2.3.34
+[DEBUG] git-commit-id-maven-plugin.version: 9.2.0
+[DEBUG] glassfish-jaxb.version: 4.0.9
+[DEBUG] glassfish-jstl.version: 3.0.1
+[DEBUG] graphql-java.version: 25.0
+[DEBUG] groovy.version: 5.0.6
+[DEBUG] grpc-java.version: 1.80.0
+[DEBUG] grpc-kotlin.version: 1.5.0
+[DEBUG] gson.version: 2.13.2
+[DEBUG] h2.version: 2.4.240
+[DEBUG] hamcrest.version: 3.0
+[DEBUG] hazelcast.version: 5.5.0
+[DEBUG] hibernate-validator.version: 9.1.0.Final
+[DEBUG] hibernate.version: 7.4.1.Final
+[DEBUG] hikaricp.version: 7.0.2
+[DEBUG] hsqldb.version: 2.7.3
+[DEBUG] htmlunit.version: 4.21.0
+[DEBUG] httpasyncclient.version: 4.1.5
+[DEBUG] httpclient5.version: 5.6.1
+[DEBUG] httpcore.version: 4.4.16
+[DEBUG] httpcore5.version: 5.4.2
+[DEBUG] infinispan.version: 16.1.4
+[DEBUG] influxdb-java.version: 2.25
+[DEBUG] jackson-2-bom.version: 2.21.4
+[DEBUG] jackson-bom.version: 3.1.4
+[DEBUG] jakarta-activation.version: 2.1.4
+[DEBUG] jakarta-annotation.version: 3.0.0
+[DEBUG] jakarta-inject.version: 2.0.1
+[DEBUG] jakarta-jms.version: 3.1.0
+[DEBUG] jakarta-json-bind.version: 3.0.2
+[DEBUG] jakarta-json.version: 2.1.3
+[DEBUG] jakarta-mail.version: 2.1.5
+[DEBUG] jakarta-management.version: 1.1.4
+[DEBUG] jakarta-persistence.version: 3.2.0
+[DEBUG] jakarta-servlet-jsp-jstl.version: 3.0.2
+[DEBUG] jakarta-servlet.version: 6.1.0
+[DEBUG] jakarta-transaction.version: 2.0.1
+[DEBUG] jakarta-validation.version: 3.1.1
+[DEBUG] jakarta-websocket.version: 2.2.0
+[DEBUG] jakarta-ws-rs.version: 4.0.0
+[DEBUG] jakarta-xml-bind.version: 4.0.5
+[DEBUG] jakarta-xml-soap.version: 3.0.2
+[DEBUG] jakarta-xml-ws.version: 4.0.3
+[DEBUG] janino.version: 3.1.12
+[DEBUG] java.class.path: /home/kali/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/boot/plexus-classworlds-2.11.0.jar
+[DEBUG] java.class.version: 69.0
+[DEBUG] java.home: /usr/lib/jvm/java-25-openjdk-amd64
+[DEBUG] java.io.tmpdir: /tmp
+[DEBUG] java.library.path: /usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+[DEBUG] java.runtime.name: OpenJDK Runtime Environment
+[DEBUG] java.runtime.version: 25.0.2+10-Debian-1
+[DEBUG] java.specification.name: Java Platform API Specification
+[DEBUG] java.specification.vendor: Oracle Corporation
+[DEBUG] java.specification.version: 25
+[DEBUG] java.vendor: Debian
+[DEBUG] java.vendor.url: https://tracker.debian.org/openjdk-25
+[DEBUG] java.vendor.url.bug: https://bugs.debian.org/openjdk-25
+[DEBUG] java.version: 25.0.2
+[DEBUG] java.version.date: 2026-01-20
+[DEBUG] java.vm.compressedOopsMode: 32-bit
+[DEBUG] java.vm.info: mixed mode, sharing
+[DEBUG] java.vm.name: OpenJDK 64-Bit Server VM
+[DEBUG] java.vm.specification.name: Java Virtual Machine Specification
+[DEBUG] java.vm.specification.vendor: Oracle Corporation
+[DEBUG] java.vm.specification.version: 25
+[DEBUG] java.vm.vendor: Debian
+[DEBUG] java.vm.version: 25.0.2+10-Debian-1
+[DEBUG] javax-cache.version: 1.1.1
+[DEBUG] javax-money.version: 1.1
+[DEBUG] jaxen.version: 2.0.6
+[DEBUG] jaybird.version: 6.0.5
+[DEBUG] jboss-logging.version: 3.6.3.Final
+[DEBUG] jdk.debug: release
+[DEBUG] jdom2.version: 2.0.6.1
+[DEBUG] jedis.version: 7.4.1
+[DEBUG] jersey.version: 4.0.2
+[DEBUG] jetty-reactive-httpclient.version: 4.1.5
+[DEBUG] jetty.version: 12.1.10
+[DEBUG] jmustache.version: 1.16
+[DEBUG] jooq.version: 3.21.5
+[DEBUG] json-path.version: 2.10.0
+[DEBUG] json-smart.version: 2.6.0
+[DEBUG] jsonassert.version: 1.5.3
+[DEBUG] jspecify.version: 1.0.0
+[DEBUG] jtds.version: 1.3.1
+[DEBUG] junit-jupiter.version: 6.0.3
+[DEBUG] junit.version: 4.13.2
+[DEBUG] kafka.version: 4.2.1
+[DEBUG] kotlin-coroutines.version: 1.10.2
+[DEBUG] kotlin-serialization.version: 1.11.0
+[DEBUG] kotlin.version: 2.3.21
+[DEBUG] lettuce.version: 7.5.2.RELEASE
+[DEBUG] library.jansi.path: /home/kali/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/lib/jansi-native
+[DEBUG] line.separator: 
+
+[DEBUG] liquibase.version: 5.0.3
+[DEBUG] log4j2.version: 2.25.4
+[DEBUG] logback.version: 1.5.34
+[DEBUG] lombok.version: 1.18.42
+[DEBUG] mapstruct.version: 1.6.3
+[DEBUG] mariadb.version: 3.5.8
+[DEBUG] maven-antrun-plugin.version: 3.2.0
+[DEBUG] maven-assembly-plugin.version: 3.8.0
+[DEBUG] maven-clean-plugin.version: 3.5.0
+[DEBUG] maven-compiler-plugin.version: 3.15.0
+[DEBUG] maven-dependency-plugin.version: 3.10.0
+[DEBUG] maven-deploy-plugin.version: 3.1.4
+[DEBUG] maven-enforcer-plugin.version: 3.6.3
+[DEBUG] maven-failsafe-plugin.version: 3.5.6
+[DEBUG] maven-help-plugin.version: 3.5.1
+[DEBUG] maven-install-plugin.version: 3.1.4
+[DEBUG] maven-invoker-plugin.version: 3.9.1
+[DEBUG] maven-jar-plugin.version: 3.5.0
+[DEBUG] maven-javadoc-plugin.version: 3.12.0
+[DEBUG] maven-resources-plugin.version: 3.5.0
+[DEBUG] maven-shade-plugin.version: 3.6.2
+[DEBUG] maven-source-plugin.version: 3.4.0
+[DEBUG] maven-surefire-plugin.version: 3.5.6
+[DEBUG] maven-war-plugin.version: 3.5.1
+[DEBUG] maven.build.timestamp: 2026-08-01T05:03:31Z
+[DEBUG] maven.build.version: Apache Maven 3.9.16 (2bdd9fddda4b155ebf8000e807eb73fd829a51d5)
+[DEBUG] maven.compiler.release: 21
+[DEBUG] maven.conf: /home/kali/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f/conf
+[DEBUG] maven.home: /home/kali/.m2/wrapper/dists/apache-maven-3.9.16/56ba1f9f
+[DEBUG] maven.multiModuleProjectDirectory: /home/kali/restaurantbot/backend
+[DEBUG] maven.version: 3.9.16
+[DEBUG] micrometer-tracing.version: 1.7.0
+[DEBUG] micrometer.version: 1.17.0
+[DEBUG] mockito.version: 5.23.0
+[DEBUG] mongodb.version: 5.8.0
+[DEBUG] mssql-jdbc.version: 13.4.0.jre11
+[DEBUG] mysql.version: 9.7.0
+[DEBUG] native-build-tools-plugin.version: 1.1.1
+[DEBUG] native.encoding: UTF-8
+[DEBUG] nekohtml.version: 1.9.22
+[DEBUG] neo4j-java-driver.version: 6.1.0
+[DEBUG] netty.version: 4.2.15.Final
+[DEBUG] opentelemetry.version: 1.62.0
+[DEBUG] oracle-database.version: 23.26.2.0.0
+[DEBUG] oracle-r2dbc.version: 1.3.0
+[DEBUG] os.arch: amd64
+[DEBUG] os.name: Linux
+[DEBUG] os.version: 6.18.5+kali-amd64
+[DEBUG] path.separator: :
+[DEBUG] pooled-jms.version: 3.2.2
+[DEBUG] postgresql.version: 42.7.11
+[DEBUG] project.baseUri: file:/home/kali/restaurantbot/backend/
+[DEBUG] project.build.sourceEncoding: UTF-8
+[DEBUG] project.reporting.outputEncoding: UTF-8
+[DEBUG] prometheus-client.version: 1.5.1
+[DEBUG] prometheus-simpleclient.version: 0.16.0
+[DEBUG] protobuf-common-protos.version: 2.70.0
+[DEBUG] protobuf-java.version: 4.34.2
+[DEBUG] protobuf-maven-plugin.version: 5.1.4
+[DEBUG] pulsar.version: 4.2.2
+[DEBUG] qpid-protonj2.version: 1.1.0
+[DEBUG] quartz.version: 2.5.2
+[DEBUG] querydsl.version: 5.1.0
+[DEBUG] r2dbc-h2.version: 1.1.0.RELEASE
+[DEBUG] r2dbc-mariadb.version: 1.4.0
+[DEBUG] r2dbc-mssql.version: 1.0.4.RELEASE
+[DEBUG] r2dbc-mysql.version: 1.4.2
+[DEBUG] r2dbc-pool.version: 1.0.2.RELEASE
+[DEBUG] r2dbc-postgresql.version: 1.1.1.RELEASE
+[DEBUG] r2dbc-proxy.version: 1.1.6.RELEASE
+[DEBUG] r2dbc-spi.version: 1.0.0.RELEASE
+[DEBUG] rabbit-amqp-client.version: 5.30.0
+[DEBUG] rabbit-stream-client.version: 1.6.0
+[DEBUG] reactive-streams.version: 1.0.4
+[DEBUG] reactor-bom.version: 2025.0.6
+[DEBUG] resource.delimiter: @
+[DEBUG] rsocket.version: 1.1.5
+[DEBUG] rxjava3.version: 3.1.12
+[DEBUG] saaj-impl.version: 3.0.6
+[DEBUG] selenium-htmlunit.version: 4.43.0
+[DEBUG] selenium.version: 4.43.0
+[DEBUG] sendgrid.version: 4.10.3
+[DEBUG] slf4j.version: 2.0.18
+[DEBUG] snakeyaml.version: 2.6
+[DEBUG] spring-amqp.version: 4.1.0
+[DEBUG] spring-batch.version: 6.0.4
+[DEBUG] spring-boot.run.main-class: ${start-class}
+[DEBUG] spring-data-bom.version: 2026.0.0
+[DEBUG] spring-framework.version: 7.0.8
+[DEBUG] spring-graphql.version: 2.0.4
+[DEBUG] spring-grpc.version: 1.1.0
+[DEBUG] spring-hateoas.version: 3.1.1
+[DEBUG] spring-integration.version: 7.1.0
+[DEBUG] spring-kafka.version: 4.1.0
+[DEBUG] spring-ldap.version: 4.1.0
+[DEBUG] spring-pulsar.version: 2.0.6
+[DEBUG] spring-restdocs.version: 4.0.1
+[DEBUG] spring-security.version: 7.1.0
+[DEBUG] spring-session.version: 4.1.0
+[DEBUG] spring-ws.version: 5.0.2
+[DEBUG] springdoc.version: 2.8.9
+[DEBUG] sqlite-jdbc.version: 3.53.2.0
+[DEBUG] stderr.encoding: UTF-8
+[DEBUG] stdin.encoding: UTF-8
+[DEBUG] stdout.encoding: UTF-8
+[DEBUG] sun.arch.data.model: 64
+[DEBUG] sun.boot.library.path: /usr/lib/jvm/java-25-openjdk-amd64/lib
+[DEBUG] sun.cpu.endian: little
+[DEBUG] sun.io.unicode.encoding: UnicodeLittle
+[DEBUG] sun.java.command: org.codehaus.plexus.classworlds.launcher.Launcher spring-boot:run --debug
+[DEBUG] sun.java.launcher: SUN_STANDARD
+[DEBUG] sun.jnu.encoding: UTF-8
+[DEBUG] sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+[DEBUG] testcontainers-redis-module.version: 2.2.4
+[DEBUG] testcontainers.version: 2.0.5
+[DEBUG] thymeleaf-extras-data-attribute.version: 2.0.1
+[DEBUG] thymeleaf-extras-springsecurity.version: 3.1.5.RELEASE
+[DEBUG] thymeleaf-layout-dialect.version: 4.0.1
+[DEBUG] thymeleaf.version: 3.1.5.RELEASE
+[DEBUG] tomcat.version: 11.0.22
+[DEBUG] unboundid-ldapsdk.version: 7.0.4
+[DEBUG] user.dir: /home/kali/restaurantbot/backend
+[DEBUG] user.home: /home/kali
+[DEBUG] user.language: en
+[DEBUG] user.name: kali
+[DEBUG] versions-maven-plugin.version: 2.21.0
+[DEBUG] vibur.version: 26.0
+[DEBUG] webjars-locator-core.version: 0.59
+[DEBUG] webjars-locator-lite.version: 1.1.3
+[DEBUG] wsdl4j.version: 1.6.3
+[DEBUG] xml-maven-plugin.version: 1.2.1
+[DEBUG] xmlunit2.version: 2.11.0
+[DEBUG] yasson.version: 3.0.4
+[DEBUG] zipkin-reporter.version: 3.5.3
+[DEBUG] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory /home/kali/restaurantbot/backend/src/test/resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory /home/kali/restaurantbot/backend/src/test/resources
+[DEBUG] no user filter components
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ restaurantbot ---
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-compiler-plugin:3.15.0:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.15.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-compiler-plugin:3.15.0:testCompile:default-testCompile' with basic configurator -->
+[DEBUG]   (s) groupId = org.projectlombok
+[DEBUG]   (s) artifactId = lombok
+[DEBUG]   (s) version = 1.18.42
+[DEBUG]   (s) groupId = org.mapstruct
+[DEBUG]   (s) artifactId = mapstruct-processor
+[DEBUG]   (s) version = 1.6.3
+[DEBUG]   (s) groupId = org.projectlombok
+[DEBUG]   (s) artifactId = lombok-mapstruct-binding
+[DEBUG]   (s) version = 0.2.0
+[DEBUG]   (f) annotationProcessorPaths = [org.projectlombok:lombok:1.18.42.jar, org.mapstruct:mapstruct-processor:1.6.3.jar, org.projectlombok:lombok-mapstruct-binding:0.2.0.jar]
+[DEBUG]   (f) annotationProcessorPathsUseDepMgmt = false
+[DEBUG]   (f) basedir = /home/kali/restaurantbot/backend
+[DEBUG]   (f) buildDirectory = /home/kali/restaurantbot/backend/target
+[DEBUG]   (f) compileSourceRoots = [/home/kali/restaurantbot/backend/src/test/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) createMissingPackageInfoClass = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) debugFileName = javac-test
+[DEBUG]   (f) enablePreview = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) fileExtensions = [jar, class]
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) forceLegacyJavacApi = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = /home/kali/restaurantbot/backend/target/generated-test-sources/test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.15.0:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /home/kali/restaurantbot/backend/target/test-classes
+[DEBUG]   (f) parameters = true
+[DEBUG]   (f) project = MavenProject: com.restaurantbot:restaurantbot:0.0.1-SNAPSHOT @ /home/kali/restaurantbot/backend/pom.xml
+[DEBUG]   (s) release = 21
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6ab4a5b
+[DEBUG]   (f) showCompilationChanges = false
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = true
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 1.8
+[DEBUG]   (f) testPath = [/home/kali/restaurantbot/backend/target/test-classes, /home/kali/restaurantbot/backend/target/classes, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-web/4.1.0/spring-boot-starter-web-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-jackson/4.1.0/spring-boot-starter-jackson-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-jackson/4.1.0/spring-boot-jackson-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/4.1.0/spring-boot-starter-tomcat-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat-runtime/4.1.0/spring-boot-starter-tomcat-runtime-4.1.0.jar, /home/kali/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.22/tomcat-embed-core-11.0.22.jar, /home/kali/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.22/tomcat-embed-websocket-11.0.22.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.1.0/spring-boot-tomcat-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.1.0/spring-boot-http-converter-4.1.0.jar, /home/kali/.m2/repository/org/springframework/spring-web/7.0.8/spring-web-7.0.8.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.1.0/spring-boot-webmvc-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-servlet/4.1.0/spring-boot-servlet-4.1.0.jar, /home/kali/.m2/repository/org/springframework/spring-webmvc/7.0.8/spring-webmvc-7.0.8.jar, /home/kali/.m2/repository/org/springframework/spring-expression/7.0.8/spring-expression-7.0.8.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/4.1.0/spring-boot-starter-data-jpa-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter/4.1.0/spring-boot-starter-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-logging/4.1.0/spring-boot-starter-logging-4.1.0.jar, /home/kali/.m2/repository/ch/qos/logback/logback-classic/1.5.34/logback-classic-1.5.34.jar, /home/kali/.m2/repository/ch/qos/logback/logback-core/1.5.34/logback-core-1.5.34.jar, /home/kali/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.4/log4j-to-slf4j-2.25.4.jar, /home/kali/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.4/log4j-api-2.25.4.jar, /home/kali/.m2/repository/org/slf4j/jul-to-slf4j/2.0.18/jul-to-slf4j-2.0.18.jar, /home/kali/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar, /home/kali/.m2/repository/org/yaml/snakeyaml/2.6/snakeyaml-2.6.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/4.1.0/spring-boot-starter-jdbc-4.1.0.jar, /home/kali/.m2/repository/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-data-jpa/4.1.0/spring-boot-data-jpa-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-data-commons/4.1.0/spring-boot-data-commons-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-persistence/4.1.0/spring-boot-persistence-4.1.0.jar, /home/kali/.m2/repository/org/springframework/data/spring-data-commons/4.1.0/spring-data-commons-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-hibernate/4.1.0/spring-boot-hibernate-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-jpa/4.1.0/spring-boot-jpa-4.1.0.jar, /home/kali/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.2.0/jakarta.persistence-api-3.2.0.jar, /home/kali/.m2/repository/org/hibernate/orm/hibernate-core/7.4.1.Final/hibernate-core-7.4.1.Final.jar, /home/kali/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar, /home/kali/.m2/repository/org/hibernate/models/hibernate-models/1.1.1/hibernate-models-1.1.1.jar, /home/kali/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.9/jaxb-runtime-4.0.9.jar, /home/kali/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.9/jaxb-core-4.0.9.jar, /home/kali/.m2/repository/org/eclipse/angus/angus-activation/2.0.3/angus-activation-2.0.3.jar, /home/kali/.m2/repository/org/glassfish/jaxb/txw2/4.0.9/txw2-4.0.9.jar, /home/kali/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar, /home/kali/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar, /home/kali/.m2/repository/org/springframework/spring-orm/7.0.8/spring-orm-7.0.8.jar, /home/kali/.m2/repository/org/springframework/data/spring-data-jpa/4.1.0/spring-data-jpa-4.1.0.jar, /home/kali/.m2/repository/org/springframework/spring-tx/7.0.8/spring-tx-7.0.8.jar, /home/kali/.m2/repository/org/antlr/antlr4-runtime/4.13.2/antlr4-runtime-4.13.2.jar, /home/kali/.m2/repository/org/springframework/spring-aspects/7.0.8/spring-aspects-7.0.8.jar, /home/kali/.m2/repository/org/aspectj/aspectjweaver/1.9.25.1/aspectjweaver-1.9.25.1.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-jdbc/4.1.0/spring-boot-jdbc-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-sql/4.1.0/spring-boot-sql-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-transaction/4.1.0/spring-boot-transaction-4.1.0.jar, /home/kali/.m2/repository/org/springframework/spring-jdbc/7.0.8/spring-jdbc-7.0.8.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-validation/4.1.0/spring-boot-starter-validation-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-validation/4.1.0/spring-boot-validation-4.1.0.jar, /home/kali/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.22/tomcat-embed-el-11.0.22.jar, /home/kali/.m2/repository/org/hibernate/validator/hibernate-validator/9.1.0.Final/hibernate-validator-9.1.0.Final.jar, /home/kali/.m2/repository/jakarta/validation/jakarta.validation-api/3.1.1/jakarta.validation-api-3.1.1.jar, /home/kali/.m2/repository/org/jboss/logging/jboss-logging/3.6.3.Final/jboss-logging-3.6.3.Final.jar, /home/kali/.m2/repository/com/fasterxml/classmate/1.7.3/classmate-1.7.3.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-security/4.1.0/spring-boot-starter-security-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-security/4.1.0/spring-boot-security-4.1.0.jar, /home/kali/.m2/repository/org/springframework/security/spring-security-config/7.1.0/spring-security-config-7.1.0.jar, /home/kali/.m2/repository/org/springframework/security/spring-security-core/7.1.0/spring-security-core-7.1.0.jar, /home/kali/.m2/repository/org/springframework/security/spring-security-crypto/7.1.0/spring-security-crypto-7.1.0.jar, /home/kali/.m2/repository/org/springframework/security/spring-security-web/7.1.0/spring-security-web-7.1.0.jar, /home/kali/.m2/repository/org/springframework/spring-aop/7.0.8/spring-aop-7.0.8.jar, /home/kali/.m2/repository/org/springframework/spring-beans/7.0.8/spring-beans-7.0.8.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/4.1.0/spring-boot-starter-actuator-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-micrometer-metrics/4.1.0/spring-boot-starter-micrometer-metrics-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-micrometer-metrics/4.1.0/spring-boot-micrometer-metrics-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-micrometer-observation/4.1.0/spring-boot-micrometer-observation-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/4.1.0/spring-boot-actuator-autoconfigure-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-actuator/4.1.0/spring-boot-actuator-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-health/4.1.0/spring-boot-health-4.1.0.jar, /home/kali/.m2/repository/io/micrometer/micrometer-observation/1.17.0/micrometer-observation-1.17.0.jar, /home/kali/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar, /home/kali/.m2/repository/io/micrometer/micrometer-commons/1.17.0/micrometer-commons-1.17.0.jar, /home/kali/.m2/repository/io/micrometer/micrometer-jakarta9/1.17.0/micrometer-jakarta9-1.17.0.jar, /home/kali/.m2/repository/io/micrometer/micrometer-core/1.17.0/micrometer-core-1.17.0.jar, /home/kali/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar, /home/kali/.m2/repository/org/postgresql/postgresql/42.7.11/postgresql-42.7.11.jar, /home/kali/.m2/repository/org/flywaydb/flyway-database-postgresql/12.4.0/flyway-database-postgresql-12.4.0.jar, /home/kali/.m2/repository/org/flywaydb/flyway-core/12.4.0/flyway-core-12.4.0.jar, /home/kali/.m2/repository/tools/jackson/core/jackson-databind/3.1.4/jackson-databind-3.1.4.jar, /home/kali/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar, /home/kali/.m2/repository/tools/jackson/core/jackson-core/3.1.4/jackson-core-3.1.4.jar, /home/kali/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-ui/2.8.9/springdoc-openapi-starter-webmvc-ui-2.8.9.jar, /home/kali/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-api/2.8.9/springdoc-openapi-starter-webmvc-api-2.8.9.jar, /home/kali/.m2/repository/org/springdoc/springdoc-openapi-starter-common/2.8.9/springdoc-openapi-starter-common-2.8.9.jar, /home/kali/.m2/repository/io/swagger/core/v3/swagger-core-jakarta/2.2.30/swagger-core-jakarta-2.2.30.jar, /home/kali/.m2/repository/org/apache/commons/commons-lang3/3.20.0/commons-lang3-3.20.0.jar, /home/kali/.m2/repository/io/swagger/core/v3/swagger-annotations-jakarta/2.2.30/swagger-annotations-jakarta-2.2.30.jar, /home/kali/.m2/repository/io/swagger/core/v3/swagger-models-jakarta/2.2.30/swagger-models-jakarta-2.2.30.jar, /home/kali/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.21.4/jackson-databind-2.21.4.jar, /home/kali/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.21.4/jackson-core-2.21.4.jar, /home/kali/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.21.4/jackson-dataformat-yaml-2.21.4.jar, /home/kali/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.21.4/jackson-datatype-jsr310-2.21.4.jar, /home/kali/.m2/repository/org/webjars/swagger-ui/5.21.0/swagger-ui-5.21.0.jar, /home/kali/.m2/repository/org/webjars/webjars-locator-lite/1.1.3/webjars-locator-lite-1.1.3.jar, /home/kali/.m2/repository/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar, /home/kali/.m2/repository/org/mapstruct/mapstruct/1.6.3/mapstruct-1.6.3.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-devtools/4.1.0/spring-boot-devtools-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot/4.1.0/spring-boot-4.1.0.jar, /home/kali/.m2/repository/org/springframework/spring-context/7.0.8/spring-context-7.0.8.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.1.0/spring-boot-autoconfigure-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-test/4.1.0/spring-boot-starter-test-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-test/4.1.0/spring-boot-test-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/4.1.0/spring-boot-test-autoconfigure-4.1.0.jar, /home/kali/.m2/repository/com/jayway/jsonpath/json-path/2.10.0/json-path-2.10.0.jar, /home/kali/.m2/repository/org/slf4j/slf4j-api/2.0.18/slf4j-api-2.0.18.jar, /home/kali/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.5/jakarta.xml.bind-api-4.0.5.jar, /home/kali/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar, /home/kali/.m2/repository/net/minidev/json-smart/2.6.0/json-smart-2.6.0.jar, /home/kali/.m2/repository/net/minidev/accessors-smart/2.6.0/accessors-smart-2.6.0.jar, /home/kali/.m2/repository/org/ow2/asm/asm/9.7.1/asm-9.7.1.jar, /home/kali/.m2/repository/org/assertj/assertj-core/3.27.7/assertj-core-3.27.7.jar, /home/kali/.m2/repository/net/bytebuddy/byte-buddy/1.18.10/byte-buddy-1.18.10.jar, /home/kali/.m2/repository/org/awaitility/awaitility/4.3.0/awaitility-4.3.0.jar, /home/kali/.m2/repository/org/hamcrest/hamcrest/3.0/hamcrest-3.0.jar, /home/kali/.m2/repository/org/junit/jupiter/junit-jupiter/6.0.3/junit-jupiter-6.0.3.jar, /home/kali/.m2/repository/org/junit/jupiter/junit-jupiter-api/6.0.3/junit-jupiter-api-6.0.3.jar, /home/kali/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar, /home/kali/.m2/repository/org/junit/platform/junit-platform-commons/6.0.3/junit-platform-commons-6.0.3.jar, /home/kali/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar, /home/kali/.m2/repository/org/junit/jupiter/junit-jupiter-params/6.0.3/junit-jupiter-params-6.0.3.jar, /home/kali/.m2/repository/org/junit/jupiter/junit-jupiter-engine/6.0.3/junit-jupiter-engine-6.0.3.jar, /home/kali/.m2/repository/org/junit/platform/junit-platform-engine/6.0.3/junit-platform-engine-6.0.3.jar, /home/kali/.m2/repository/org/mockito/mockito-core/5.23.0/mockito-core-5.23.0.jar, /home/kali/.m2/repository/net/bytebuddy/byte-buddy-agent/1.18.10/byte-buddy-agent-1.18.10.jar, /home/kali/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar, /home/kali/.m2/repository/org/mockito/mockito-junit-jupiter/5.23.0/mockito-junit-jupiter-5.23.0.jar, /home/kali/.m2/repository/org/skyscreamer/jsonassert/1.5.3/jsonassert-1.5.3.jar, /home/kali/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar, /home/kali/.m2/repository/org/springframework/spring-core/7.0.8/spring-core-7.0.8.jar, /home/kali/.m2/repository/commons-logging/commons-logging/1.3.6/commons-logging-1.3.6.jar, /home/kali/.m2/repository/org/springframework/spring-test/7.0.8/spring-test-7.0.8.jar, /home/kali/.m2/repository/org/xmlunit/xmlunit-core/2.11.0/xmlunit-core-2.11.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-security-test/4.1.0/spring-boot-starter-security-test-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-security-test/4.1.0/spring-boot-security-test-4.1.0.jar, /home/kali/.m2/repository/org/springframework/security/spring-security-test/7.1.0/spring-security-test-7.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc-test/4.1.0/spring-boot-starter-webmvc-test-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-jackson-test/4.1.0/spring-boot-starter-jackson-test-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-starter-webmvc/4.1.0/spring-boot-starter-webmvc-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-webmvc-test/4.1.0/spring-boot-webmvc-test-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.0/spring-boot-web-server-4.1.0.jar, /home/kali/.m2/repository/org/springframework/boot/spring-boot-resttestclient/4.1.0/spring-boot-resttestclient-4.1.0.jar]
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) useModulePath = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=28853, ConflictMarker.markTime=47694, ConflictMarker.nodeCount=4, ConflictIdSorter.graphTime=7215, ConflictIdSorter.topsortTime=19331, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=155369, ConflictResolver.conflictItemCount=3, DfDependencyCollector.collectTime=655823, DfDependencyCollector.transformTime=292038}
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] Nothing to compile - all classes are up to date.
+[DEBUG] Adding /home/kali/restaurantbot/backend/target/generated-test-sources/test-annotations to the project test-compile source roots but NOT the actual test-compile source roots:
+  /home/kali/restaurantbot/backend/src/test/java
+[INFO] 
+[INFO] <<< spring-boot:4.1.0:run (default-cli) < test-compile @ restaurantbot <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.1.0:run (default-cli) @ restaurantbot ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=309871, ConflictMarker.markTime=132829, ConflictMarker.nodeCount=59, ConflictIdSorter.graphTime=183698, ConflictIdSorter.topsortTime=87446, ConflictIdSorter.conflictIdCount=39, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1593457, ConflictResolver.conflictItemCount=56, DfDependencyCollector.collectTime=286056848, DfDependencyCollector.transformTime=2371126}
+[DEBUG] org.springframework.boot:spring-boot-maven-plugin:jar:4.1.0
+[DEBUG]    org.springframework.boot:spring-boot-buildpack-platform:jar:4.1.0:runtime
+[DEBUG]       net.java.dev.jna:jna-platform:jar:5.17.0:runtime
+[DEBUG]          net.java.dev.jna:jna:jar:5.17.0:runtime
+[DEBUG]       org.apache.commons:commons-compress:jar:1.27.1:compile
+[DEBUG]          commons-codec:commons-codec:jar:1.17.1:compile
+[DEBUG]          org.apache.commons:commons-lang3:jar:3.16.0:compile
+[DEBUG]       org.apache.httpcomponents.client5:httpclient5:jar:5.6.1:runtime
+[DEBUG]          org.apache.httpcomponents.core5:httpcore5:jar:5.4:runtime
+[DEBUG]          org.apache.httpcomponents.core5:httpcore5-h2:jar:5.4:runtime
+[DEBUG]       org.tomlj:tomlj:jar:1.0.0:runtime
+[DEBUG]          org.antlr:antlr4-runtime:jar:4.7.2:runtime
+[DEBUG]          com.google.code.findbugs:jsr305:jar:3.0.2:runtime
+[DEBUG]       tools.jackson.core:jackson-databind:jar:3.1.4:runtime
+[DEBUG]          com.fasterxml.jackson.core:jackson-annotations:jar:2.21:runtime
+[DEBUG]          tools.jackson.core:jackson-core:jar:3.1.4:runtime
+[DEBUG]    org.springframework.boot:spring-boot-loader-tools:jar:4.1.0:runtime
+[DEBUG]    org.apache.maven.shared:maven-common-artifact-filters:jar:3.4.0:runtime
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.36:compile
+[DEBUG]       org.apache.maven.resolver:maven-resolver-util:jar:1.4.1:runtime
+[DEBUG]          org.apache.maven.resolver:maven-resolver-api:jar:1.4.1:runtime
+[DEBUG]    org.sonatype.plexus:plexus-build-api:jar:0.0.7:runtime
+[DEBUG]    org.springframework:spring-core:jar:7.0.8:runtime
+[DEBUG]       commons-logging:commons-logging:jar:1.3.5:runtime
+[DEBUG]       org.jspecify:jspecify:jar:1.0.0:runtime
+[DEBUG]    org.springframework:spring-context:jar:7.0.8:runtime
+[DEBUG]       org.springframework:spring-aop:jar:7.0.8:runtime
+[DEBUG]       org.springframework:spring-beans:jar:7.0.8:runtime
+[DEBUG]       org.springframework:spring-expression:jar:7.0.8:runtime
+[DEBUG]       io.micrometer:micrometer-observation:jar:1.16.6:runtime
+[DEBUG]          io.micrometer:micrometer-commons:jar:1.16.6:runtime
+[DEBUG]    org.apache.maven.plugins:maven-shade-plugin:jar:3.6.0:compile (optional)
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.5.1:compile (optional)
+[DEBUG]       org.ow2.asm:asm:jar:9.7:compile (optional)
+[DEBUG]       org.ow2.asm:asm-commons:jar:9.7:compile (optional)
+[DEBUG]          org.ow2.asm:asm-tree:jar:9.7:compile (optional)
+[DEBUG]       org.jdom:jdom2:jar:2.0.6.1:compile (optional)
+[DEBUG]       commons-io:commons-io:jar:2.16.1:compile
+[DEBUG]       org.vafer:jdependency:jar:2.10:compile (optional)
+[DEBUG] Created new class realm plugin>org.springframework.boot:spring-boot-maven-plugin:4.1.0
+[DEBUG] Importing foreign packages into class realm plugin>org.springframework.boot:spring-boot-maven-plugin:4.1.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.springframework.boot:spring-boot-maven-plugin:4.1.0
+[DEBUG]   Included: org.springframework.boot:spring-boot-maven-plugin:jar:4.1.0
+[DEBUG]   Included: org.springframework.boot:spring-boot-buildpack-platform:jar:4.1.0
+[DEBUG]   Included: net.java.dev.jna:jna-platform:jar:5.17.0
+[DEBUG]   Included: net.java.dev.jna:jna:jar:5.17.0
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.27.1
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.17.1
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.16.0
+[DEBUG]   Included: org.apache.httpcomponents.client5:httpclient5:jar:5.6.1
+[DEBUG]   Included: org.apache.httpcomponents.core5:httpcore5:jar:5.4
+[DEBUG]   Included: org.apache.httpcomponents.core5:httpcore5-h2:jar:5.4
+[DEBUG]   Included: org.tomlj:tomlj:jar:1.0.0
+[DEBUG]   Included: org.antlr:antlr4-runtime:jar:4.7.2
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:3.0.2
+[DEBUG]   Included: tools.jackson.core:jackson-databind:jar:3.1.4
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-annotations:jar:2.21
+[DEBUG]   Included: tools.jackson.core:jackson-core:jar:3.1.4
+[DEBUG]   Included: org.springframework.boot:spring-boot-loader-tools:jar:4.1.0
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:3.4.0
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: org.springframework:spring-core:jar:7.0.8
+[DEBUG]   Included: commons-logging:commons-logging:jar:1.3.5
+[DEBUG]   Included: org.jspecify:jspecify:jar:1.0.0
+[DEBUG]   Included: org.springframework:spring-context:jar:7.0.8
+[DEBUG]   Included: org.springframework:spring-aop:jar:7.0.8
+[DEBUG]   Included: org.springframework:spring-beans:jar:7.0.8
+[DEBUG]   Included: org.springframework:spring-expression:jar:7.0.8
+[DEBUG]   Included: io.micrometer:micrometer-observation:jar:1.16.6
+[DEBUG]   Included: io.micrometer:micrometer-commons:jar:1.16.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-shade-plugin:jar:3.6.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.5.1
+[DEBUG]   Included: org.ow2.asm:asm:jar:9.7
+[DEBUG]   Included: org.ow2.asm:asm-commons:jar:9.7
+[DEBUG]   Included: org.ow2.asm:asm-tree:jar:9.7
+[DEBUG]   Included: org.jdom:jdom2:jar:2.0.6.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.16.1
+[DEBUG]   Included: org.vafer:jdependency:jar:2.10
+[DEBUG] Loading mojo org.springframework.boot:spring-boot-maven-plugin:4.1.0:run from plugin realm ClassRealm[plugin>org.springframework.boot:spring-boot-maven-plugin:4.1.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@5bc2b487]
+[DEBUG] Configuring mojo execution 'org.springframework.boot:spring-boot-maven-plugin:4.1.0:run:default-cli' with basic configurator -->
+[DEBUG]   (f) addResources = false
+[DEBUG]   (f) additionalClasspathElements = []
+[DEBUG]   (f) agents = []
+[DEBUG]   (f) classesDirectory = /home/kali/restaurantbot/backend/target/classes
+[DEBUG]   (f) excludes = []
+[DEBUG]   (f) includes = []
+[DEBUG]   (f) optimizedLaunch = true
+[DEBUG]   (f) profiles = []
+[DEBUG]   (f) project = MavenProject: com.restaurantbot:restaurantbot:0.0.1-SNAPSHOT @ /home/kali/restaurantbot/backend/pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@6ab4a5b
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) useTestClasspath = false
+[DEBUG] -- end configuration --
+[INFO] Attaching agents: []
+[DEBUG] JVM argument: -XX:TieredStopAtLevel=1
+[DEBUG] Classpath for forked process: /home/kali/restaurantbot/backend/target/classes:/home/kali/.m2/repository/org/springframework/boot/spring-boot-jackson/4.1.0/spring-boot-jackson-4.1.0.jar:/home/kali/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.22/tomcat-embed-core-11.0.22.jar:/home/kali/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.22/tomcat-embed-websocket-11.0.22.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.1.0/spring-boot-tomcat-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.1.0/spring-boot-http-converter-4.1.0.jar:/home/kali/.m2/repository/org/springframework/spring-web/7.0.8/spring-web-7.0.8.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.1.0/spring-boot-webmvc-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-servlet/4.1.0/spring-boot-servlet-4.1.0.jar:/home/kali/.m2/repository/org/springframework/spring-webmvc/7.0.8/spring-webmvc-7.0.8.jar:/home/kali/.m2/repository/org/springframework/spring-expression/7.0.8/spring-expression-7.0.8.jar:/home/kali/.m2/repository/ch/qos/logback/logback-classic/1.5.34/logback-classic-1.5.34.jar:/home/kali/.m2/repository/ch/qos/logback/logback-core/1.5.34/logback-core-1.5.34.jar:/home/kali/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.4/log4j-to-slf4j-2.25.4.jar:/home/kali/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.4/log4j-api-2.25.4.jar:/home/kali/.m2/repository/org/slf4j/jul-to-slf4j/2.0.18/jul-to-slf4j-2.0.18.jar:/home/kali/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/home/kali/.m2/repository/org/yaml/snakeyaml/2.6/snakeyaml-2.6.jar:/home/kali/.m2/repository/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-data-jpa/4.1.0/spring-boot-data-jpa-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-data-commons/4.1.0/spring-boot-data-commons-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-persistence/4.1.0/spring-boot-persistence-4.1.0.jar:/home/kali/.m2/repository/org/springframework/data/spring-data-commons/4.1.0/spring-data-commons-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-hibernate/4.1.0/spring-boot-hibernate-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-jpa/4.1.0/spring-boot-jpa-4.1.0.jar:/home/kali/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.2.0/jakarta.persistence-api-3.2.0.jar:/home/kali/.m2/repository/org/hibernate/orm/hibernate-core/7.4.1.Final/hibernate-core-7.4.1.Final.jar:/home/kali/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/kali/.m2/repository/org/hibernate/models/hibernate-models/1.1.1/hibernate-models-1.1.1.jar:/home/kali/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.9/jaxb-runtime-4.0.9.jar:/home/kali/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.9/jaxb-core-4.0.9.jar:/home/kali/.m2/repository/org/eclipse/angus/angus-activation/2.0.3/angus-activation-2.0.3.jar:/home/kali/.m2/repository/org/glassfish/jaxb/txw2/4.0.9/txw2-4.0.9.jar:/home/kali/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/kali/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/kali/.m2/repository/org/springframework/spring-orm/7.0.8/spring-orm-7.0.8.jar:/home/kali/.m2/repository/org/springframework/data/spring-data-jpa/4.1.0/spring-data-jpa-4.1.0.jar:/home/kali/.m2/repository/org/springframework/spring-tx/7.0.8/spring-tx-7.0.8.jar:/home/kali/.m2/repository/org/antlr/antlr4-runtime/4.13.2/antlr4-runtime-4.13.2.jar:/home/kali/.m2/repository/org/springframework/spring-aspects/7.0.8/spring-aspects-7.0.8.jar:/home/kali/.m2/repository/org/aspectj/aspectjweaver/1.9.25.1/aspectjweaver-1.9.25.1.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-jdbc/4.1.0/spring-boot-jdbc-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-sql/4.1.0/spring-boot-sql-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-transaction/4.1.0/spring-boot-transaction-4.1.0.jar:/home/kali/.m2/repository/org/springframework/spring-jdbc/7.0.8/spring-jdbc-7.0.8.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-validation/4.1.0/spring-boot-validation-4.1.0.jar:/home/kali/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.22/tomcat-embed-el-11.0.22.jar:/home/kali/.m2/repository/org/hibernate/validator/hibernate-validator/9.1.0.Final/hibernate-validator-9.1.0.Final.jar:/home/kali/.m2/repository/jakarta/validation/jakarta.validation-api/3.1.1/jakarta.validation-api-3.1.1.jar:/home/kali/.m2/repository/org/jboss/logging/jboss-logging/3.6.3.Final/jboss-logging-3.6.3.Final.jar:/home/kali/.m2/repository/com/fasterxml/classmate/1.7.3/classmate-1.7.3.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-security/4.1.0/spring-boot-security-4.1.0.jar:/home/kali/.m2/repository/org/springframework/security/spring-security-config/7.1.0/spring-security-config-7.1.0.jar:/home/kali/.m2/repository/org/springframework/security/spring-security-core/7.1.0/spring-security-core-7.1.0.jar:/home/kali/.m2/repository/org/springframework/security/spring-security-crypto/7.1.0/spring-security-crypto-7.1.0.jar:/home/kali/.m2/repository/org/springframework/security/spring-security-web/7.1.0/spring-security-web-7.1.0.jar:/home/kali/.m2/repository/org/springframework/spring-aop/7.0.8/spring-aop-7.0.8.jar:/home/kali/.m2/repository/org/springframework/spring-beans/7.0.8/spring-beans-7.0.8.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-micrometer-metrics/4.1.0/spring-boot-micrometer-metrics-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-micrometer-observation/4.1.0/spring-boot-micrometer-observation-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/4.1.0/spring-boot-actuator-autoconfigure-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-actuator/4.1.0/spring-boot-actuator-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-health/4.1.0/spring-boot-health-4.1.0.jar:/home/kali/.m2/repository/io/micrometer/micrometer-observation/1.17.0/micrometer-observation-1.17.0.jar:/home/kali/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/home/kali/.m2/repository/io/micrometer/micrometer-commons/1.17.0/micrometer-commons-1.17.0.jar:/home/kali/.m2/repository/io/micrometer/micrometer-jakarta9/1.17.0/micrometer-jakarta9-1.17.0.jar:/home/kali/.m2/repository/io/micrometer/micrometer-core/1.17.0/micrometer-core-1.17.0.jar:/home/kali/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar:/home/kali/.m2/repository/org/postgresql/postgresql/42.7.11/postgresql-42.7.11.jar:/home/kali/.m2/repository/org/flywaydb/flyway-database-postgresql/12.4.0/flyway-database-postgresql-12.4.0.jar:/home/kali/.m2/repository/org/flywaydb/flyway-core/12.4.0/flyway-core-12.4.0.jar:/home/kali/.m2/repository/tools/jackson/core/jackson-databind/3.1.4/jackson-databind-3.1.4.jar:/home/kali/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar:/home/kali/.m2/repository/tools/jackson/core/jackson-core/3.1.4/jackson-core-3.1.4.jar:/home/kali/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-ui/2.8.9/springdoc-openapi-starter-webmvc-ui-2.8.9.jar:/home/kali/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-api/2.8.9/springdoc-openapi-starter-webmvc-api-2.8.9.jar:/home/kali/.m2/repository/org/springdoc/springdoc-openapi-starter-common/2.8.9/springdoc-openapi-starter-common-2.8.9.jar:/home/kali/.m2/repository/io/swagger/core/v3/swagger-core-jakarta/2.2.30/swagger-core-jakarta-2.2.30.jar:/home/kali/.m2/repository/org/apache/commons/commons-lang3/3.20.0/commons-lang3-3.20.0.jar:/home/kali/.m2/repository/io/swagger/core/v3/swagger-annotations-jakarta/2.2.30/swagger-annotations-jakarta-2.2.30.jar:/home/kali/.m2/repository/io/swagger/core/v3/swagger-models-jakarta/2.2.30/swagger-models-jakarta-2.2.30.jar:/home/kali/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.21.4/jackson-databind-2.21.4.jar:/home/kali/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.21.4/jackson-core-2.21.4.jar:/home/kali/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.21.4/jackson-dataformat-yaml-2.21.4.jar:/home/kali/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.21.4/jackson-datatype-jsr310-2.21.4.jar:/home/kali/.m2/repository/org/webjars/swagger-ui/5.21.0/swagger-ui-5.21.0.jar:/home/kali/.m2/repository/org/webjars/webjars-locator-lite/1.1.3/webjars-locator-lite-1.1.3.jar:/home/kali/.m2/repository/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar:/home/kali/.m2/repository/org/mapstruct/mapstruct/1.6.3/mapstruct-1.6.3.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-devtools/4.1.0/spring-boot-devtools-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot/4.1.0/spring-boot-4.1.0.jar:/home/kali/.m2/repository/org/springframework/spring-context/7.0.8/spring-context-7.0.8.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.1.0/spring-boot-autoconfigure-4.1.0.jar:/home/kali/.m2/repository/org/slf4j/slf4j-api/2.0.18/slf4j-api-2.0.18.jar:/home/kali/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.5/jakarta.xml.bind-api-4.0.5.jar:/home/kali/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar:/home/kali/.m2/repository/net/bytebuddy/byte-buddy/1.18.10/byte-buddy-1.18.10.jar:/home/kali/.m2/repository/org/springframework/spring-core/7.0.8/spring-core-7.0.8.jar:/home/kali/.m2/repository/commons-logging/commons-logging/1.3.6/commons-logging-1.3.6.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.0/spring-boot-web-server-4.1.0.jar
+[DEBUG] Application arguments: 
+[DEBUG] Working directory: /home/kali/restaurantbot/backend
+[DEBUG] Java arguments: -XX:TieredStopAtLevel=1 -cp /home/kali/restaurantbot/backend/target/classes:/home/kali/.m2/repository/org/springframework/boot/spring-boot-jackson/4.1.0/spring-boot-jackson-4.1.0.jar:/home/kali/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/11.0.22/tomcat-embed-core-11.0.22.jar:/home/kali/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/11.0.22/tomcat-embed-websocket-11.0.22.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-tomcat/4.1.0/spring-boot-tomcat-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-http-converter/4.1.0/spring-boot-http-converter-4.1.0.jar:/home/kali/.m2/repository/org/springframework/spring-web/7.0.8/spring-web-7.0.8.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-webmvc/4.1.0/spring-boot-webmvc-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-servlet/4.1.0/spring-boot-servlet-4.1.0.jar:/home/kali/.m2/repository/org/springframework/spring-webmvc/7.0.8/spring-webmvc-7.0.8.jar:/home/kali/.m2/repository/org/springframework/spring-expression/7.0.8/spring-expression-7.0.8.jar:/home/kali/.m2/repository/ch/qos/logback/logback-classic/1.5.34/logback-classic-1.5.34.jar:/home/kali/.m2/repository/ch/qos/logback/logback-core/1.5.34/logback-core-1.5.34.jar:/home/kali/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.25.4/log4j-to-slf4j-2.25.4.jar:/home/kali/.m2/repository/org/apache/logging/log4j/log4j-api/2.25.4/log4j-api-2.25.4.jar:/home/kali/.m2/repository/org/slf4j/jul-to-slf4j/2.0.18/jul-to-slf4j-2.0.18.jar:/home/kali/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/home/kali/.m2/repository/org/yaml/snakeyaml/2.6/snakeyaml-2.6.jar:/home/kali/.m2/repository/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-data-jpa/4.1.0/spring-boot-data-jpa-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-data-commons/4.1.0/spring-boot-data-commons-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-persistence/4.1.0/spring-boot-persistence-4.1.0.jar:/home/kali/.m2/repository/org/springframework/data/spring-data-commons/4.1.0/spring-data-commons-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-hibernate/4.1.0/spring-boot-hibernate-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-jpa/4.1.0/spring-boot-jpa-4.1.0.jar:/home/kali/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.2.0/jakarta.persistence-api-3.2.0.jar:/home/kali/.m2/repository/org/hibernate/orm/hibernate-core/7.4.1.Final/hibernate-core-7.4.1.Final.jar:/home/kali/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/kali/.m2/repository/org/hibernate/models/hibernate-models/1.1.1/hibernate-models-1.1.1.jar:/home/kali/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.9/jaxb-runtime-4.0.9.jar:/home/kali/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.9/jaxb-core-4.0.9.jar:/home/kali/.m2/repository/org/eclipse/angus/angus-activation/2.0.3/angus-activation-2.0.3.jar:/home/kali/.m2/repository/org/glassfish/jaxb/txw2/4.0.9/txw2-4.0.9.jar:/home/kali/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/kali/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/kali/.m2/repository/org/springframework/spring-orm/7.0.8/spring-orm-7.0.8.jar:/home/kali/.m2/repository/org/springframework/data/spring-data-jpa/4.1.0/spring-data-jpa-4.1.0.jar:/home/kali/.m2/repository/org/springframework/spring-tx/7.0.8/spring-tx-7.0.8.jar:/home/kali/.m2/repository/org/antlr/antlr4-runtime/4.13.2/antlr4-runtime-4.13.2.jar:/home/kali/.m2/repository/org/springframework/spring-aspects/7.0.8/spring-aspects-7.0.8.jar:/home/kali/.m2/repository/org/aspectj/aspectjweaver/1.9.25.1/aspectjweaver-1.9.25.1.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-jdbc/4.1.0/spring-boot-jdbc-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-sql/4.1.0/spring-boot-sql-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-transaction/4.1.0/spring-boot-transaction-4.1.0.jar:/home/kali/.m2/repository/org/springframework/spring-jdbc/7.0.8/spring-jdbc-7.0.8.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-validation/4.1.0/spring-boot-validation-4.1.0.jar:/home/kali/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/11.0.22/tomcat-embed-el-11.0.22.jar:/home/kali/.m2/repository/org/hibernate/validator/hibernate-validator/9.1.0.Final/hibernate-validator-9.1.0.Final.jar:/home/kali/.m2/repository/jakarta/validation/jakarta.validation-api/3.1.1/jakarta.validation-api-3.1.1.jar:/home/kali/.m2/repository/org/jboss/logging/jboss-logging/3.6.3.Final/jboss-logging-3.6.3.Final.jar:/home/kali/.m2/repository/com/fasterxml/classmate/1.7.3/classmate-1.7.3.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-security/4.1.0/spring-boot-security-4.1.0.jar:/home/kali/.m2/repository/org/springframework/security/spring-security-config/7.1.0/spring-security-config-7.1.0.jar:/home/kali/.m2/repository/org/springframework/security/spring-security-core/7.1.0/spring-security-core-7.1.0.jar:/home/kali/.m2/repository/org/springframework/security/spring-security-crypto/7.1.0/spring-security-crypto-7.1.0.jar:/home/kali/.m2/repository/org/springframework/security/spring-security-web/7.1.0/spring-security-web-7.1.0.jar:/home/kali/.m2/repository/org/springframework/spring-aop/7.0.8/spring-aop-7.0.8.jar:/home/kali/.m2/repository/org/springframework/spring-beans/7.0.8/spring-beans-7.0.8.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-micrometer-metrics/4.1.0/spring-boot-micrometer-metrics-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-micrometer-observation/4.1.0/spring-boot-micrometer-observation-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/4.1.0/spring-boot-actuator-autoconfigure-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-actuator/4.1.0/spring-boot-actuator-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-health/4.1.0/spring-boot-health-4.1.0.jar:/home/kali/.m2/repository/io/micrometer/micrometer-observation/1.17.0/micrometer-observation-1.17.0.jar:/home/kali/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/home/kali/.m2/repository/io/micrometer/micrometer-commons/1.17.0/micrometer-commons-1.17.0.jar:/home/kali/.m2/repository/io/micrometer/micrometer-jakarta9/1.17.0/micrometer-jakarta9-1.17.0.jar:/home/kali/.m2/repository/io/micrometer/micrometer-core/1.17.0/micrometer-core-1.17.0.jar:/home/kali/.m2/repository/org/hdrhistogram/HdrHistogram/2.2.2/HdrHistogram-2.2.2.jar:/home/kali/.m2/repository/org/postgresql/postgresql/42.7.11/postgresql-42.7.11.jar:/home/kali/.m2/repository/org/flywaydb/flyway-database-postgresql/12.4.0/flyway-database-postgresql-12.4.0.jar:/home/kali/.m2/repository/org/flywaydb/flyway-core/12.4.0/flyway-core-12.4.0.jar:/home/kali/.m2/repository/tools/jackson/core/jackson-databind/3.1.4/jackson-databind-3.1.4.jar:/home/kali/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar:/home/kali/.m2/repository/tools/jackson/core/jackson-core/3.1.4/jackson-core-3.1.4.jar:/home/kali/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-ui/2.8.9/springdoc-openapi-starter-webmvc-ui-2.8.9.jar:/home/kali/.m2/repository/org/springdoc/springdoc-openapi-starter-webmvc-api/2.8.9/springdoc-openapi-starter-webmvc-api-2.8.9.jar:/home/kali/.m2/repository/org/springdoc/springdoc-openapi-starter-common/2.8.9/springdoc-openapi-starter-common-2.8.9.jar:/home/kali/.m2/repository/io/swagger/core/v3/swagger-core-jakarta/2.2.30/swagger-core-jakarta-2.2.30.jar:/home/kali/.m2/repository/org/apache/commons/commons-lang3/3.20.0/commons-lang3-3.20.0.jar:/home/kali/.m2/repository/io/swagger/core/v3/swagger-annotations-jakarta/2.2.30/swagger-annotations-jakarta-2.2.30.jar:/home/kali/.m2/repository/io/swagger/core/v3/swagger-models-jakarta/2.2.30/swagger-models-jakarta-2.2.30.jar:/home/kali/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.21.4/jackson-databind-2.21.4.jar:/home/kali/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.21.4/jackson-core-2.21.4.jar:/home/kali/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.21.4/jackson-dataformat-yaml-2.21.4.jar:/home/kali/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.21.4/jackson-datatype-jsr310-2.21.4.jar:/home/kali/.m2/repository/org/webjars/swagger-ui/5.21.0/swagger-ui-5.21.0.jar:/home/kali/.m2/repository/org/webjars/webjars-locator-lite/1.1.3/webjars-locator-lite-1.1.3.jar:/home/kali/.m2/repository/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar:/home/kali/.m2/repository/org/mapstruct/mapstruct/1.6.3/mapstruct-1.6.3.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-devtools/4.1.0/spring-boot-devtools-4.1.0.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot/4.1.0/spring-boot-4.1.0.jar:/home/kali/.m2/repository/org/springframework/spring-context/7.0.8/spring-context-7.0.8.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/4.1.0/spring-boot-autoconfigure-4.1.0.jar:/home/kali/.m2/repository/org/slf4j/slf4j-api/2.0.18/slf4j-api-2.0.18.jar:/home/kali/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.5/jakarta.xml.bind-api-4.0.5.jar:/home/kali/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.4/jakarta.activation-api-2.1.4.jar:/home/kali/.m2/repository/net/bytebuddy/byte-buddy/1.18.10/byte-buddy-1.18.10.jar:/home/kali/.m2/repository/org/springframework/spring-core/7.0.8/spring-core-7.0.8.jar:/home/kali/.m2/repository/commons-logging/commons-logging/1.3.6/commons-logging-1.3.6.jar:/home/kali/.m2/repository/org/springframework/boot/spring-boot-web-server/4.1.0/spring-boot-web-server-4.1.0.jar com.restaurantbot.RestaurantbotApplication
+[DEBUG] Environment variables: 
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.0)
+
+2026-08-01T10:33:34.743+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] c.r.RestaurantbotApplication             : Starting RestaurantbotApplication using Java 25.0.2 with PID 512686 (/home/kali/restaurantbot/backend/target/classes started by kali in /home/kali/restaurantbot/backend)
+2026-08-01T10:33:34.751+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] c.r.RestaurantbotApplication             : No active profile set, falling back to 1 default profile: "default"
+2026-08-01T10:33:34.892+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-08-01T10:33:34.892+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-08-01T10:33:37.177+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-01T10:33:37.290+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 2 JPA repository interfaces.
+2026-08-01T10:33:38.823+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-08-01T10:33:38.848+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-01T10:33:38.849+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-01T10:33:38.925+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4030 ms
+2026-08-01T10:33:39.471+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-01T10:33:39.578+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-01T10:33:40.928+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-01T10:33:41.091+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-01T10:33:41.735+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49a438d3
+2026-08-01T10:33:41.757+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-01T10:33:42.609+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/restaurantbot]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 16.14
+	Default catalog/schema: restaurantbot/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-01T10:33:45.389+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-01T10:33:45.475+05:30 ERROR 512686 --- [restaurantbot] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema validation: missing table [restaurant_tables]
+2026-08-01T10:33:45.476+05:30  WARN 512686 --- [restaurantbot] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema validation: missing table [restaurant_tables]
+2026-08-01T10:33:45.479+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-01T10:33:45.492+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-08-01T10:33:45.508+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-08-01T10:33:45.532+05:30  INFO 512686 --- [restaurantbot] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-01T10:33:45.565+05:30 ERROR 512686 --- [restaurantbot] [  restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema validation: missing table [restaurant_tables]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1815) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.8.jar:7.0.8]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.1.0.jar:4.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.1.0.jar:4.1.0]
+	at com.restaurantbot.RestaurantbotApplication.main(RestaurantbotApplication.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.1.0.jar:4.1.0]
+Caused by: jakarta.persistence.PersistenceException: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema validation: missing table [restaurant_tables]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:448) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862) ~[spring-beans-7.0.8.jar:7.0.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811) ~[spring-beans-7.0.8.jar:7.0.8]
+	... 18 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema validation: missing table [restaurant_tables]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:128) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:75) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:278) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452) ~[hibernate-core-7.4.1.Final.jar:7.4.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443) ~[spring-orm-7.0.8.jar:7.0.8]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436) ~[spring-orm-7.0.8.jar:7.0.8]
+	... 22 common frames omitted
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17.408 s
+[INFO] Finished at: 2026-08-01T10:33:45+05:30
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Shutting down adapter factory; available factories [file-lock, rwlock-local, semaphore-local, noop]; available name mappers [discriminating, file-gaecv, file-gav, file-hgaecv, file-hgav, file-static, gaecv, gav, static]
+[DEBUG] Shutting down 'file-lock' factory
+[DEBUG] Shutting down 'rwlock-local' factory
+[DEBUG] Shutting down 'semaphore-local' factory
+[DEBUG] Shutting down 'noop' factory

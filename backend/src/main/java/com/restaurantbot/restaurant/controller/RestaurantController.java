@@ -1,6 +1,7 @@
 package com.restaurantbot.restaurant.controller;
 
-import com.restaurantbot.common.response.ApiResponse;
+import com.restaurantbot.common.dto.ApiResponse;
+import com.restaurantbot.common.util.ApiResponseUtil;
 import com.restaurantbot.restaurant.dto.CreateRestaurantRequest;
 import com.restaurantbot.restaurant.dto.RestaurantResponse;
 import com.restaurantbot.restaurant.service.RestaurantService;
@@ -9,6 +10,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.http.ResponseEntity;
 import java.util.UUID;
 import java.util.List;
 
@@ -20,53 +22,68 @@ public class RestaurantController {
     private final RestaurantService service;
 
     @PostMapping
-    @ResponseStatus(HttpStatus.CREATED)
-    public ApiResponse<RestaurantResponse> create(
-            @Valid @RequestBody CreateRestaurantRequest request
-            ) {
+    public ResponseEntity<ApiResponse<RestaurantResponse>> create(
+            @Valid @RequestBody CreateRestaurantRequest request) {
 
-        return ApiResponse.<RestaurantResponse>builder()
-            .success(true)
-            .message("Restaurant created successfully")
-            .data(service.create(request))
-            .build();
+            RestaurantResponse response = service.create(request);
+
+            return ResponseEntity.status(HttpStatus.CREATED)
+                .body(ApiResponseUtil.success(
+                            "Restaurant created successfully.",
+                            response));
             }
 
     @GetMapping("/{id}")
-    public ApiResponse<RestaurantResponse> getById(
+    public ResponseEntity<ApiResponse<RestaurantResponse>> getById(
             @PathVariable Long id
             ) {
-        return ApiResponse.<RestaurantResponse>builder()
-            .success(true)
-            .message("Restaurant found")
-            .data(service.findById(id))
-            .build();
+
+        RestaurantResponse response = service.findById(id);
+
+        return ResponseEntity.ok(
+                ApiResponseUtil.success(
+                    "Restaurant retrieved successfully.",
+                    response
+                    ));
             }
 
     @GetMapping
-    public ApiResponse<List<RestaurantResponse>> getAll() {
-        return ApiResponse.<List<RestaurantResponse>>builder()
-            .success(true)
-            .message("Restaurants retrieved successfully")
-            .data(service.findAll())
-            .build();
+    public ResponseEntity<ApiResponse<List<RestaurantResponse>>> getAll() {
+        List<RestaurantResponse> restaurants = service.findAll();
+
+        return ResponseEntity.ok(
+                ApiResponseUtil.success(
+                    "Restaurants retrieved successfully.",
+                    restaurants
+                    )
+                );
     }
 
     @PutMapping("/{id}")
-    public ApiResponse<RestaurantResponse> update(
+    public ResponseEntity<ApiResponse<RestaurantResponse>> update(
             @PathVariable Long id,
             @Valid @RequestBody UpdateRestaurantRequest request
             ) {
-        return ApiResponse.<RestaurantResponse>builder()
-            .success(true)
-            .message("Restaurant updated successfully")
-            .data(service.update(id, request))
-            .build();
+
+        RestaurantResponse response =   service.update(id, request);
+
+        return ResponseEntity.ok(
+                ApiResponseUtil.success(
+                    "Restaurant updated successfully.",
+                    response
+                    )
+                );
             }
 
     @DeleteMapping("/{id}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@PathVariable Long id) {
-        service.delete(id);
-    }
+    public ResponseEntity<ApiResponse<Void>> delete(
+            @PathVariable Long id){
+            service.delete(id);
+
+            return ResponseEntity.ok(
+                    ApiResponseUtil.success(
+                        "Restaurant deleted successfully."
+                        )
+                    );
+            }
 }

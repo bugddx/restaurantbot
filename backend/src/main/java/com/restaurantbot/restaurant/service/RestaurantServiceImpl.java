@@ -3,8 +3,8 @@ package com.restaurantbot.restaurant.service;
 import com.restaurantbot.restaurant.dto.CreateRestaurantRequest;
 import com.restaurantbot.restaurant.dto.RestaurantResponse;
 import com.restaurantbot.restaurant.entity.Restaurant;
-import com.restaurantbot.restaurant.exception.RestaurantAlreadyExistsException;
-import com.restaurantbot.restaurant.exception.RestaurantNotFoundException;
+import com.restaurantbot.common.exception.ResourceAlreadyExistsException;
+import com.restaurantbot.common.exception.ResourceNotFoundException;
 import com.restaurantbot.restaurant.mapper.RestaurantMapper;
 import com.restaurantbot.restaurant.repository.RestaurantRepository;
 import com.restaurantbot.restaurant.dto.UpdateRestaurantRequest;
@@ -27,7 +27,7 @@ public class RestaurantServiceImpl implements RestaurantService {
     public RestaurantResponse create(CreateRestaurantRequest request) {
 
         if (repository.existsByEmail(request.email())) {
-            throw new RestaurantAlreadyExistsException(request.email());
+            throw new ResourceAlreadyExistsException("Restaurant already exists with email: " + request.email());
         }
 
         Restaurant restaurant = mapper.toEntity(request);
@@ -42,7 +42,7 @@ public class RestaurantServiceImpl implements RestaurantService {
     public RestaurantResponse findById(Long id) {
 
         Restaurant restaurant = repository.findById(id)
-                .orElseThrow(() -> new RestaurantNotFoundException(id));
+                .orElseThrow(() -> new ResourceNotFoundException("Restaurant not found with id: "+id));
 
         return mapper.toResponse(restaurant);
     }
@@ -68,7 +68,7 @@ public class RestaurantServiceImpl implements RestaurantService {
                 repository.existsByEmailAndIdNot(request.email(), id);
 
         if (emailUsedByAnotherRestaurant) {
-            throw new RestaurantAlreadyExistsException(request.email());
+            throw new ResourceAlreadyExistsException("Restaurant already exists with email: " + request.email());
         }
 
         mapper.updateEntity(request, restaurant);
@@ -86,6 +86,6 @@ public class RestaurantServiceImpl implements RestaurantService {
 
     private Restaurant findRestaurant(Long id) {
         return repository.findById(id)
-                .orElseThrow(() -> new RestaurantNotFoundException(id));
+                .orElseThrow(() -> new ResourceNotFoundException("Restaurant not found"));
     }
 }

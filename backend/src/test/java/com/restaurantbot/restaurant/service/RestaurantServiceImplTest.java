@@ -4,8 +4,8 @@ import com.restaurantbot.restaurant.dto.CreateRestaurantRequest;
 import com.restaurantbot.restaurant.dto.RestaurantResponse;
 import com.restaurantbot.restaurant.dto.UpdateRestaurantRequest;
 import com.restaurantbot.restaurant.entity.Restaurant;
-import com.restaurantbot.restaurant.exception.RestaurantAlreadyExistsException;
-import com.restaurantbot.restaurant.exception.RestaurantNotFoundException;
+import com.restaurantbot.common.exception.ResourceAlreadyExistsException;
+import com.restaurantbot.common.exception.ResourceNotFoundException;
 import com.restaurantbot.restaurant.mapper.RestaurantMapper;
 import com.restaurantbot.restaurant.repository.RestaurantRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -119,7 +119,7 @@ class RestaurantServiceImplTest {
                 .thenReturn(true);
 
         assertThrows(
-                RestaurantAlreadyExistsException.class,
+                ResourceAlreadyExistsException.class,
                 () -> service.create(request)
         );
 
@@ -182,7 +182,7 @@ class RestaurantServiceImplTest {
                 .thenReturn(Optional.empty());
 
         assertThrows(
-                RestaurantNotFoundException.class,
+                ResourceNotFoundException.class,
                 () -> service.findById(id)
         );
 
@@ -357,7 +357,7 @@ class RestaurantServiceImplTest {
         )).thenReturn(true);
 
         assertThrows(
-                RestaurantAlreadyExistsException.class,
+                ResourceAlreadyExistsException.class,
                 () -> service.update(id, request)
         );
 
@@ -403,7 +403,7 @@ class RestaurantServiceImplTest {
                 .thenReturn(Optional.empty());
 
         assertThrows(
-                RestaurantNotFoundException.class,
+                ResourceNotFoundException.class,
                 () -> service.delete(id)
         );
 

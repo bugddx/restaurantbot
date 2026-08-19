@@ -1,0 +1,59 @@
+import com.restaurantbot.conversation.dto.BotResponse;
+import com.restaurantbot.conversation.entity.Conversation;
+import com.restaurantbot.conversation.handler.StartHandler;
+import com.restaurantbot.conversation.state.ConversationState;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+@ExtendWith(MockitoExtension.class)
+class StartHandlerTest {
+
+    private StartHandler handler;
+
+    private Conversation conversation;
+
+    @BeforeEach
+    void setUp() {
+        handler = new StartHandler();
+
+        conversation = Conversation.builder()
+                .id(100L)
+                .phoneNumber("919876543210")
+                .state(ConversationState.START)
+                .build();
+    }
+
+    @Test
+    void getState_shouldReturnStart() {
+
+        assertThat(handler.getState())
+                .isEqualTo(ConversationState.START);
+    }
+
+    @Test
+    void handle_shouldReturnWelcomeMessage() {
+
+        BotResponse response =
+                handler.handle(
+                        conversation,
+                        "Hi"
+                );
+
+        assertThat(response).isNotNull();
+
+        assertThat(response.message())
+                .contains("Welcome");
+
+        assertThat(response.nextState())
+                .isEqualTo(ConversationState.MAIN_MENU);
+
+        assertThat(response.endConversation())
+                .isFalse();
+    }
+}

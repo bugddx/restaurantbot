@@ -222,7 +222,8 @@ class MenuCategoryServiceTest {
         given(restaurantRepository.existsById(1L))
                 .willReturn(true);
 
-        given(menuCategoryRepository.findByRestaurantId(
+        //given(menuCategoryRepository.findByRestaurantId(
+        given(menuCategoryRepository.findByRestaurantIdOrderByDisplayOrderAsc(
                 eq(1L),
                 any(PageRequest.class)))
                 .willReturn(page);
@@ -241,7 +242,7 @@ class MenuCategoryServiceTest {
 
         verify(restaurantRepository).existsById(1L);
         verify(menuCategoryRepository)
-                .findByRestaurantId(eq(1L), any(PageRequest.class));
+                .findByRestaurantIdOrderByDisplayOrderAsc(eq(1L), any(PageRequest.class));
     }
 
     @Test
@@ -258,7 +259,7 @@ class MenuCategoryServiceTest {
         );
 
         verify(menuCategoryRepository, never())
-                .findByRestaurantId(anyLong(), any());
+                .findByRestaurantIdOrderByDisplayOrderAsc(anyLong(), any());
     }
 
     @Test

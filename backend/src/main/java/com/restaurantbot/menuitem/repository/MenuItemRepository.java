@@ -40,4 +40,10 @@ public interface MenuItemRepository extends JpaRepository<MenuItem, Long> {
         Long categoryId,
         Pageable pageable
 );
+
+    Page<MenuItem> findByRestaurantIdAndCategoryIdOrderByDisplayOrderAscIdAsc(
+        Long restaurantId,
+        Long categoryId,
+        Pageable pageable
+);
 }

@@ -322,7 +322,7 @@ class MenuItemServiceTest {
         given(menuCategoryRepository.findById(10L))
             .willReturn(Optional.of(category));
 
-        given(menuItemRepository.findByRestaurantIdAndCategoryId(
+        given(menuItemRepository.findByRestaurantIdAndCategoryIdOrderByDisplayOrderAscIdAsc(
                     eq(1L),
                     eq(10L),
                     any()))

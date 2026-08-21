@@ -112,7 +112,7 @@ public class MenuItemServiceImpl implements MenuItemService {
         }
 
         return menuItemRepository
-            .findByRestaurantIdAndCategoryId(
+            .findByRestaurantIdAndCategoryIdOrderByDisplayOrderAscIdAsc(
                     restaurantId,
                     categoryId,
                     pageable)
@@ -170,4 +170,21 @@ public class MenuItemServiceImpl implements MenuItemService {
 
         menuItemRepository.delete(item);
             }
+
+    @Override
+@Transactional(readOnly = true)
+public MenuItem getEntityById(
+        Long restaurantId,
+        Long itemId) {
+
+    return menuItemRepository
+            .findByIdAndRestaurantId(
+                    itemId,
+                    restaurantId
+            )
+            .orElseThrow(() ->
+                    new ResourceNotFoundException(
+                            "Menu item not found"
+                    ));
+}
 }

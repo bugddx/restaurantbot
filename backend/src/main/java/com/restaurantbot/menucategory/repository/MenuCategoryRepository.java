@@ -8,26 +8,32 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 public interface MenuCategoryRepository
-        extends JpaRepository<MenuCategory, Long> {
+    extends JpaRepository<MenuCategory, Long> {
 
-    Page<MenuCategory> findByRestaurantId(
+    /*    Page<MenuCategory> findByRestaurantId(
+          Long restaurantId,
+          Pageable pageable
+          );
+          */
+
+    Page<MenuCategory> findByRestaurantIdOrderByDisplayOrderAsc(
             Long restaurantId,
             Pageable pageable
-    );
+            );
 
     Optional<MenuCategory> findByIdAndRestaurantId(
             Long id,
             Long restaurantId
-    );
+            );
 
     boolean existsByRestaurantIdAndName(
             Long restaurantId,
             String name
-    );
+            );
 
     boolean existsByRestaurantIdAndNameAndIdNot(
             Long restaurantId,
             String name,
             Long categoryId
-    );
+            );
 }

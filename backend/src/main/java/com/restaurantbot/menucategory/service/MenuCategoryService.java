@@ -2,6 +2,7 @@ package com.restaurantbot.menucategory.service;
 
 import com.restaurantbot.menucategory.dto.CreateMenuCategoryRequest;
 import com.restaurantbot.menucategory.dto.MenuCategoryResponse;
+import com.restaurantbot.menucategory.entity.MenuCategory;
 import com.restaurantbot.menucategory.dto.UpdateMenuCategoryRequest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -33,4 +34,9 @@ public interface MenuCategoryService {
             Long restaurantId,
             Long categoryId
     );
+
+    MenuCategory getEntityById(
+        Long restaurantId,
+        Long categoryId
+);
 }

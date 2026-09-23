@@ -75,8 +75,11 @@ public class MenuCategoryServiceImpl implements MenuCategoryService {
         }
 
         return menuCategoryRepository
-                .findByRestaurantId(restaurantId, pageable)
-                .map(menuCategoryMapper::toResponse);
+        .findByRestaurantIdOrderByDisplayOrderAsc(
+                restaurantId,
+                pageable
+        )
+        .map(menuCategoryMapper::toResponse);
     }
 
     @Override
@@ -119,4 +122,21 @@ public class MenuCategoryServiceImpl implements MenuCategoryService {
 
         menuCategoryRepository.delete(category);
     }
+
+    @Override
+@Transactional(readOnly = true)
+public MenuCategory getEntityById(
+        Long restaurantId,
+        Long categoryId) {
+
+    return menuCategoryRepository
+            .findByIdAndRestaurantId(
+                    categoryId,
+                    restaurantId
+            )
+            .orElseThrow(() ->
+                    new ResourceNotFoundException(
+                            "Menu category not found"
+                    ));
+}
 }

@@ -19,7 +19,8 @@ public class SecurityConfig {
                     "/health",
                     "/swagger-ui/**",
                     "/v3/api-docs/**",
-                    "/actuator/health"
+                    "/actuator/health",
+                    "/api/v1/whatsapp/webhook"
                 ).permitAll()
                 .anyRequest().permitAll()
             )
